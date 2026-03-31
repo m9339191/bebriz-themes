@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <filter id="pdShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Frame -->
+  <rect x="16" y="16" width="768" height="468" rx="8" fill="#fff" filter="url(#pdShadow)"/>
+
+  <!-- Browser Chrome -->
+  <rect x="16" y="16" width="768" height="36" rx="8" fill="#2D2D2D"/>
+  <rect x="16" y="40" width="768" height="12" fill="#2D2D2D"/>
+  <circle cx="40" cy="34" r="5" fill="#FF5F56"/>
+  <circle cx="56" cy="34" r="5" fill="#FFBD2E"/>
+  <circle cx="72" cy="34" r="5" fill="#27C93F"/>
+  <rect x="180" y="25" width="400" height="18" rx="4" fill="#1A1A1A"/>
+  <text x="250" y="38" font-family="sans-serif" font-size="10" fill="#999">luxe-fashion.myshopify.com/products/classic-oxford</text>
+
+  <!-- Page Content -->
+  <rect x="16" y="52" width="768" height="432" fill="#FFFFFF"/>
+
+  <!-- Nav -->
+  <rect x="16" y="52" width="768" height="40" fill="#FFFFFF"/>
+  <line x1="16" y1="92" x2="784" y2="92" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="50" y="77" font-family="sans-serif" font-size="14" font-weight="700" fill="#222">LUXE FASHION</text>
+
+  <!-- Breadcrumb -->
+  <text x="50" y="112" font-family="sans-serif" font-size="10" fill="#999">Home / Shirts / Classic Oxford Shirt</text>
+
+  <!-- Product Image -->
+  <rect x="50" y="125" width="340" height="330" rx="6" fill="#F0F0F0"/>
+  <rect x="50" y="125" width="340" height="330" rx="6" fill="#E8E8E8"/>
+  <!-- Image placeholder icon -->
+  <rect x="185" y="260" width="70" height="50" rx="4" fill="none" stroke="#CCC" stroke-width="2"/>
+  <circle cx="200" cy="275" r="6" fill="none" stroke="#CCC" stroke-width="2"/>
+  <polyline points="185,300 210,280 230,295 255,270" fill="none" stroke="#CCC" stroke-width="2"/>
+
+  <!-- Thumbnail strip -->
+  <rect x="50" y="462" width="60" height="14" rx="3" fill="#E0E0E0" stroke="#CCC" stroke-width="1"/>
+  <rect x="118" y="462" width="60" height="14" rx="3" fill="#E0E0E0"/>
+  <rect x="186" y="462" width="60" height="14" rx="3" fill="#E0E0E0"/>
+  <rect x="254" y="462" width="60" height="14" rx="3" fill="#E0E0E0"/>
+
+  <!-- Product Info -->
+  <text x="430" y="148" font-family="sans-serif" font-size="22" font-weight="700" fill="#222">Classic Oxford Shirt</text>
+  <text x="430" y="175" font-family="sans-serif" font-size="20" font-weight="600" fill="#222">$89</text>
+  <text x="480" y="175" font-family="sans-serif" font-size="14" fill="#999" text-decoration="line-through">$120</text>
+
+  <!-- Rating -->
+  <text x="430" y="198" font-family="sans-serif" font-size="13" fill="#FBBF24">&#9733;&#9733;&#9733;&#9733;&#9733;</text>
+  <text x="510" y="198" font-family="sans-serif" font-size="11" fill="#999">(24 reviews)</text>
+
+  <!-- Color Label -->
+  <text x="430" y="228" font-family="sans-serif" font-size="12" font-weight="600" fill="#222">Color</text>
+  <!-- Color Swatches -->
+  <circle cx="442" cy="248" r="12" fill="#1A1A1A" stroke="#222" stroke-width="2"/>
+  <circle cx="474" cy="248" r="12" fill="#1B3A5C" stroke="#E5E5E5" stroke-width="1"/>
+  <circle cx="506" cy="248" r="12" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+
+  <!-- Size Label -->
+  <text x="430" y="285" font-family="sans-serif" font-size="12" font-weight="600" fill="#222">Size</text>
+  <!-- Size Buttons -->
+  <rect x="430" y="295" width="40" height="30" rx="4" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="443" y="314" font-family="sans-serif" font-size="11" fill="#555">S</text>
+  <rect x="478" y="295" width="40" height="30" rx="4" fill="#222"/>
+  <text x="490" y="314" font-family="sans-serif" font-size="11" fill="#FFF">M</text>
+  <rect x="526" y="295" width="40" height="30" rx="4" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="540" y="314" font-family="sans-serif" font-size="11" fill="#555">L</text>
+  <rect x="574" y="295" width="40" height="30" rx="4" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="584" y="314" font-family="sans-serif" font-size="11" fill="#555">XL</text>
+
+  <!-- Add to Cart -->
+  <rect x="430" y="345" width="320" height="44" rx="6" fill="#222"/>
+  <text x="543" y="372" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Add to Cart</text>
+
+  <!-- Wishlist -->
+  <text x="555" y="410" font-family="sans-serif" font-size="11" fill="#888">Add to Wishlist</text>
+
+  <!-- Product Tabs -->
+  <line x1="430" y1="430" x2="750" y2="430" stroke="#E5E5E5" stroke-width="1"/>
+  <text x="430" y="450" font-family="sans-serif" font-size="12" font-weight="600" fill="#222">Description</text>
+  <line x1="430" y1="455" x2="505" y2="455" stroke="#222" stroke-width="2"/>
+  <text x="530" y="450" font-family="sans-serif" font-size="12" fill="#999">Reviews</text>
+  <text x="610" y="450" font-family="sans-serif" font-size="12" fill="#999">Shipping</text>
+
+  <!-- Description text lines -->
+  <rect x="430" y="465" width="300" height="6" rx="3" fill="#F0F0F0"/>
+  <rect x="430" y="477" width="250" height="6" rx="3" fill="#F0F0F0"/>
+</svg>

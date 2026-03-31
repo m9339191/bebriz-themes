@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#222222"/>
+      <stop offset="100%" stop-color="#333333"/>
+    </linearGradient>
+    <linearGradient id="shimmer" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="800" fill="url(#bg3)"/>
+  <rect x="0" y="300" width="1920" height="200" fill="url(#shimmer)" transform="rotate(-3, 960, 400)"/>
+  <g transform="translate(180, 200)" opacity="0.06">
+    <rect x="-50" y="0" width="100" height="120" rx="3" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M-25,-5 Q-25,-40 0,-40 Q25,-40 25,-5" fill="none" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  <g transform="translate(400, 500)" opacity="0.05">
+    <rect x="-35" y="0" width="70" height="85" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <path d="M-18,-4 Q-18,-28 0,-28 Q18,-28 18,-4" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(1650, 180)" opacity="0.06">
+    <rect x="-45" y="0" width="90" height="110" rx="3" fill="none" stroke="#ffffff" stroke-width="2"/>
+    <path d="M-22,-5 Q-22,-35 0,-35 Q22,-35 22,-5" fill="none" stroke="#ffffff" stroke-width="2"/>
+  </g>
+  <g transform="translate(1500, 550)" opacity="0.05">
+    <rect x="-30" y="0" width="60" height="75" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    <path d="M-15,-4 Q-15,-24 0,-24 Q15,-24 15,-4" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(960, 250)">
+    <g transform="translate(0, -60)" opacity="0.9">
+      <rect x="-28" y="-12" width="36" height="24" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <path d="M8,-12 L8,-20 L25,-20 L32,-12 L32,12 L8,12" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <circle cx="-14" cy="12" r="6" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <circle cx="22" cy="12" r="6" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+    </g>
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+    <text x="0" y="70" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="90" fill="#ffffff" letter-spacing="10" font-weight="400">FREE</text>
+    <text x="0" y="160" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="90" fill="#ffffff" letter-spacing="14" font-weight="400">SHIPPING</text>
+    <rect x="-60" y="185" width="120" height="3" fill="#c9a96e" opacity="0.7"/>
+    <text x="0" y="235" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="32" fill="#e0e0e0" letter-spacing="4" opacity="0.9">On Orders Over $75</text>
+    <text x="0" y="275" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#888888" letter-spacing="4">FAST &amp; RELIABLE DELIVERY WORLDWIDE</text>
+    <rect x="-80" y="310" width="160" height="48" rx="0" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <text x="0" y="340" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#ffffff" letter-spacing="4">SHOP NOW</text>
+    <line x1="-150" y1="390" x2="150" y2="390" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  </g>
+  <rect x="0" y="796" width="1920" height="4" fill="#c9a96e" opacity="0.4"/>
+</svg>

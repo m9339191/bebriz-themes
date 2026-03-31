@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="800" viewBox="0 0 1920 800">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#2d2d2d"/>
+    </linearGradient>
+    <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9a96e" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#c9a96e"/>
+      <stop offset="100%" stop-color="#c9a96e" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="modelClip">
+      <rect x="80" y="0" width="700" height="800"/>
+    </clipPath>
+  </defs>
+  <rect width="1920" height="800" fill="url(#bg1)"/>
+  <g opacity="0.04">
+    <line x1="0" y1="0" x2="800" y2="800" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="1000" y2="800" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="1200" y2="800" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="1400" y2="800" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="1600" y2="800" stroke="#fff" stroke-width="1"/>
+    <line x1="1000" y1="0" x2="1800" y2="800" stroke="#fff" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1920" y2="720" stroke="#fff" stroke-width="1"/>
+  </g>
+  <g clip-path="url(#modelClip)" opacity="0.35">
+    <ellipse cx="420" cy="95" rx="38" ry="48" fill="#c9a96e"/>
+    <rect x="408" y="140" width="24" height="35" fill="#c9a96e"/>
+    <path d="M382,60 Q370,20 400,10 Q430,-5 460,10 Q490,25 480,60 Q485,80 490,110 Q495,140 480,155 Q475,130 470,100 Q465,75 458,60 Z" fill="#c9a96e" opacity="0.8"/>
+    <path d="M408,170 Q350,180 310,210 L310,260 Q340,240 380,230 L408,225 Z" fill="#c9a96e"/>
+    <path d="M432,170 Q490,180 530,210 L530,260 Q500,240 460,230 L432,225 Z" fill="#c9a96e"/>
+    <path d="M310,260 Q320,350 340,420 Q360,430 420,435 Q480,430 500,420 Q520,350 530,260 Z" fill="#c9a96e"/>
+    <path d="M340,420 Q310,520 280,650 Q270,700 260,800 L580,800 Q570,700 560,650 Q530,520 500,420 Q480,430 420,435 Q360,430 340,420 Z" fill="#c9a96e"/>
+    <path d="M310,210 Q280,280 270,360 Q265,400 275,420 Q285,400 290,360 Q300,300 320,250 Z" fill="#c9a96e" opacity="0.9"/>
+    <path d="M530,210 Q560,280 570,340 Q575,360 560,380 Q540,390 530,370 Q540,340 530,300 Q520,260 530,230 Z" fill="#c9a96e" opacity="0.9"/>
+    <rect x="555" y="345" width="45" height="30" rx="3" fill="#c9a96e" opacity="0.7"/>
+  </g>
+  <rect x="780" y="100" width="1" height="600" fill="#c9a96e" opacity="0.4"/>
+  <g transform="translate(780, 400) rotate(45)" opacity="0.5">
+    <rect x="-6" y="-6" width="12" height="12" fill="none" stroke="#c9a96e" stroke-width="1"/>
+  </g>
+  <g transform="translate(960, 250)">
+    <text x="180" y="0" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="14" fill="#c9a96e" letter-spacing="6" font-weight="400">EXCLUSIVE RELEASE</text>
+    <line x1="80" y1="25" x2="280" y2="25" stroke="#c9a96e" stroke-width="0.5" opacity="0.6"/>
+    <text x="180" y="100" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#ffffff" letter-spacing="8" font-weight="400">NEW</text>
+    <text x="180" y="180" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" fill="#ffffff" letter-spacing="12" font-weight="400">COLLECTION</text>
+    <text x="180" y="240" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="48" fill="#c9a96e" letter-spacing="20" font-weight="300" opacity="0.8">2026</text>
+    <line x1="80" y1="270" x2="280" y2="270" stroke="#c9a96e" stroke-width="0.5" opacity="0.6"/>
+    <text x="180" y="310" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="14" fill="#999999" letter-spacing="3">CURATED LUXURY ESSENTIALS</text>
+    <rect x="100" y="350" width="160" height="48" rx="0" fill="none" stroke="#ffffff" stroke-width="1"/>
+    <text x="180" y="380" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#ffffff" letter-spacing="4">SHOP NOW</text>
+  </g>
+  <rect x="0" y="795" width="1920" height="5" fill="url(#gold1)" opacity="0.6"/>
+  <rect x="0" y="0" width="1920" height="2" fill="url(#gold1)" opacity="0.3"/>
+</svg>

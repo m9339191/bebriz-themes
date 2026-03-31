@@ -1,0 +1,237 @@
+themes:
+  - handle: luxe-fashion
+    name: "Luxe Fashion"
+    description: "Premium fashion & lifestyle Shopify theme"
+    price: "$59"
+    features:
+      - color-swatches
+      - ajax-cart
+      - wishlist
+      - compare
+      - quick-view
+      - mega-menu
+      - product-tabs
+      - social-proof
+      - newsletter-popup
+      - price-range-filter
+      - grid-list-toggle
+      - free-shipping-bar
+      - size-guide
+      - countdown-timer
+      - lookbook
+      - seo
+      - rtl
+      - mobile-responsive
+    sections:
+      - getting-started
+      - theme-settings
+      - header-navigation
+      - hero-slider
+      - product-page
+      - collection-page
+      - cart-drawer
+      - wishlist-compare
+      - social-proof
+      - newsletter-popup
+      - license-activation
+
+  - handle: pawsome
+    name: "Pawsome"
+    description: "Pet & Wellness Shopify theme"
+    price: "$59"
+    features:
+      - breed-filter
+      - subscription-ready
+      - color-swatches
+      - ajax-cart
+      - wishlist
+      - compare
+      - quick-view
+      - mega-menu
+      - product-tabs
+      - social-proof
+      - newsletter-popup
+      - price-range-filter
+      - free-shipping-bar
+      - seo
+      - mobile-responsive
+    sections:
+      - getting-started
+      - theme-settings
+      - header-navigation
+      - hero-slider
+      - product-page
+      - collection-page
+      - cart-drawer
+      - wishlist-compare
+      - social-proof
+      - newsletter-popup
+      - pet-features
+      - license-activation
+
+  - handle: vitaboost
+    name: "VitaBoost"
+    description: "Supplements & Health Shopify theme"
+    price: "$59"
+    features:
+      - ingredient-chart
+      - stack-builder
+      - certification-badges
+      - dosage-guide
+      - color-swatches
+      - ajax-cart
+      - wishlist
+      - compare
+      - quick-view
+      - product-tabs
+      - social-proof
+      - newsletter-popup
+      - search
+      - seo
+      - mobile-responsive
+    sections:
+      - getting-started
+      - theme-settings
+      - header-navigation
+      - hero-slider
+      - product-page
+      - collection-page
+      - cart-drawer
+      - wishlist-compare
+      - social-proof
+      - newsletter-popup
+      - supplements-features
+      - license-activation
+
+  - handle: brewhaus
+    name: "BrewHaus"
+    description: "Coffee & Specialty Food Shopify theme"
+    price: "$59"
+    features:
+      - flavor-profile
+      - roast-level
+      - origin-card
+      - brewing-guide
+      - color-swatches
+      - ajax-cart
+      - wishlist
+      - compare
+      - search
+      - product-tabs
+      - social-proof
+      - newsletter-popup
+      - seo
+      - mobile-responsive
+    sections:
+      - getting-started
+      - theme-settings
+      - header-navigation
+      - hero-slider
+      - product-page
+      - collection-page
+      - cart-drawer
+      - wishlist-compare
+      - social-proof
+      - newsletter-popup
+      - coffee-features
+      - license-activation
+
+  - handle: pixelmart
+    name: "Pixelmart"
+    description: "Digital Products Shopify theme for creators and marketplaces"
+    price: "$59"
+    features:
+      - dark-mode
+      - file-info
+      - file-tree
+      - compatibility-checker
+      - license-selector
+      - license-table
+      - bundle-builder
+      - format-badge
+      - ajax-cart
+      - wishlist
+      - compare
+      - search
+      - social-proof
+      - newsletter-popup
+      - seo
+      - mobile-responsive
+    sections:
+      - getting-started
+      - theme-settings
+      - header-navigation
+      - hero-slider
+      - product-page
+      - collection-page
+      - cart-drawer
+      - wishlist-compare
+      - social-proof
+      - newsletter-popup
+      - digital-features
+      - license-activation
+
+  - handle: littlejoy
+    name: "LittleJoy"
+    description: "Kids & Baby Shopify theme"
+    price: "$59"
+    features:
+      - shop-by-age
+      - milestone-cards
+      - safety-badges
+      - size-recommender
+      - bouncy-animations
+      - color-swatches
+      - ajax-cart
+      - wishlist
+      - compare
+      - search
+      - social-proof
+      - newsletter-popup
+      - product-tabs
+      - mobile-responsive
+    sections:
+      - getting-started
+      - theme-settings
+      - header-navigation
+      - hero-slider
+      - product-page
+      - collection-page
+      - cart-drawer
+      - wishlist-compare
+      - social-proof
+      - newsletter-popup
+      - kids-features
+      - license-activation
+
+  - handle: brilliance
+    name: "Brilliance"
+    description: "Luxury Jewelry & Accessories Shopify theme"
+    price: "$79"
+    features:
+      - ring-size-guide
+      - custom-engraving
+      - certification-card
+      - luxury-design
+      - color-swatches
+      - ajax-cart
+      - wishlist
+      - compare
+      - search
+      - social-proof
+      - newsletter-popup
+      - product-tabs
+      - mobile-responsive
+    sections:
+      - getting-started
+      - theme-settings
+      - header-navigation
+      - hero-slider
+      - product-page
+      - collection-page
+      - cart-drawer
+      - wishlist-compare
+      - social-proof
+      - newsletter-popup
+      - jewelry-features
+      - license-activation

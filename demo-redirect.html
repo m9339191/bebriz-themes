@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opening Demo Store...</title>
+  <style>
+    body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#0A0A0B;color:#F5F5F7;font-family:'Inter',sans-serif}
+    .loader{text-align:center}
+    .loader p{font-size:1rem;opacity:0.6;margin-top:16px}
+    .spinner{width:40px;height:40px;border:3px solid rgba(255,255,255,0.1);border-top-color:#6366F1;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div class="spinner"></div>
+    <p>Opening demo store...</p>
+  </div>
+  <script>
+    (function() {
+      var params = new URLSearchParams(window.location.search);
+      var store = params.get('store') || 'https://moontemplate.myshopify.com';
+      var pw = params.get('pw') || '';
+
+      if (!pw) {
+        window.location.href = store;
+        return;
+      }
+
+      // Create hidden form and auto-submit
+      var form = document.createElement('form');
+      form.method = 'POST';
+      form.action = store + '/password';
+
+      var input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = 'password';
+      input.value = pw;
+      form.appendChild(input);
+
+      document.body.appendChild(form);
+      form.submit();
+    })();
+  </script>
+</body>
+</html>

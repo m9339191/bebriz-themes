@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixelmart Documentation &mdash; beBriz</title>
+  <meta name="description" content="Complete documentation for the Pixelmart Shopify theme by beBriz. Installation, setup, features, customization, and troubleshooting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo"><span>be</span>Briz</a>
+      <nav class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../themes/index.html">Themes</a>
+        <a href="../../docs/index.html" class="active">Documentation</a>
+        <a href="../../support/index.html">Support</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile sidebar toggle -->
+  <button class="docs-sidebar-toggle">Show Navigation</button>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-logo">
+        <a href="../../index.html" class="logo" style="font-size: 1.2rem;"><span>be</span>Briz</a>
+      </div>
+      <nav>
+        <h3>Documentation</h3>
+        <a href="#getting-started">Getting Started</a>
+        <a href="#theme-settings">Theme Settings</a>
+        <a href="#header-navigation">Header &amp; Navigation</a>
+        <a href="#hero-slider">Hero Slider</a>
+        <a href="#product-page">Product Page</a>
+        <a href="#collection-page">Collection Page</a>
+        <a href="#cart-drawer">Cart Drawer</a>
+        <a href="#wishlist-compare">Wishlist &amp; Compare</a>
+        <a href="#social-proof">Social Proof</a>
+        <a href="#newsletter-popup">Newsletter Popup</a>
+        <a href="#digital-features">Digital Products Features</a>
+        <a href="#license-activation">License &amp; Activation</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="docs-main">
+      <div class="docs-breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span>/</span>
+        <a href="../../docs/index.html">Docs</a>
+        <span>/</span>
+        Pixelmart
+      </div>
+
+      <div class="docs-content">
+        <h1>Pixelmart Documentation</h1>
+        <p>This comprehensive guide covers everything you need to install, configure, and customize the Pixelmart Shopify theme. Use the sidebar navigation to jump to a specific section, or scroll through for the complete reference.</p>
+
+        <!-- Getting Started -->
+        <h2 id="getting-started">Getting Started</h2>
+
+        <h3>System Requirements</h3>
+        
+        <p>Luxe Fashion requires a Shopify store on any current plan (Basic Shopify, Shopify, Advanced, or Shopify Plus). The theme is built on Online Store 2.0 and requires no additional apps for core functionality.</p>
+        
+        <h3>Installation</h3>
+        
+        <p>After completing your purchase, you will receive a ZIP file containing the theme. Follow these steps to install it on your Shopify store:</p>
+        
+        <ol>
+          <li>Log in to your <strong>Shopify admin panel</strong> at your-store.myshopify.com/admin.</li>
+          <li>Navigate to <strong>Online Store &gt; Themes</strong> in the left sidebar.</li>
+          <li>In the Theme library section, click the <strong>Add theme</strong> button.</li>
+          <li>Select <strong>Upload ZIP file</strong> from the dropdown menu.</li>
+          <li>Choose the downloaded ZIP file from your computer and wait for the upload to complete. This typically takes 15-30 seconds.</li>
+          <li>Once uploaded, the theme will appear in your theme library. Click <strong>Customize</strong> to open the visual theme editor, or click <strong>Actions &gt; Publish</strong> to make it your live theme immediately.</li>
+        </ol>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> We strongly recommend customizing the theme on an unpublished version first. Configure your colors, sections, and content, then publish when you are satisfied with the result. This way your live store is never in an unfinished state.</p>
+        </div>
+        
+        <h3>Using Shopify CLI</h3>
+        
+        <p>If you prefer working with the command line, you can deploy the theme using Shopify CLI:</p>
+        
+        <pre><code>shopify theme push --store your-store.myshopify.com</code></pre>
+        
+        <p>This requires the Shopify CLI to be installed and authenticated with your store. Extract the ZIP file first, then run the command from the extracted directory. Refer to the official Shopify CLI documentation for setup instructions.</p>
+
+        <!-- Theme Settings -->
+        <h2 id="theme-settings">Theme Settings</h2>
+
+        <h3>Colors</h3>
+        
+        <p>Luxe Fashion provides a comprehensive color system that you can fully customize without any code changes. In the Shopify theme editor, navigate to <strong>Theme settings &gt; Colors</strong> to configure:</p>
+        
+        <ul>
+          <li><strong>Primary color</strong> &mdash; Used for buttons, links, and accent elements throughout the theme. This is your brand's main action color.</li>
+          <li><strong>Secondary color</strong> &mdash; Applied to secondary buttons, badges, and supporting UI elements.</li>
+          <li><strong>Background color</strong> &mdash; The main background color for all pages.</li>
+          <li><strong>Text color</strong> &mdash; Body text color used across all content areas.</li>
+          <li><strong>Header background &amp; text</strong> &mdash; Separate color controls for the site header, navigation links, and mobile menu.</li>
+          <li><strong>Footer background &amp; text</strong> &mdash; Independent footer color settings for background, headings, and link colors.</li>
+          <li><strong>Sale / Badge colors</strong> &mdash; Customize the appearance of sale badges, "New" tags, and "Sold out" indicators independently.</li>
+        </ul>
+        
+        <h3>Typography</h3>
+        
+        <p>Navigate to <strong>Theme settings &gt; Typography</strong> to select fonts for headings and body text. You can choose from the full Shopify-hosted font library or provide a custom font URL. The theme supports:</p>
+        
+        <ul>
+          <li><strong>Heading font</strong> &mdash; Applied to all headings (h1 through h6), section titles, product names, and collection titles.</li>
+          <li><strong>Body font</strong> &mdash; Used for paragraphs, product descriptions, navigation links, form labels, and all general UI text.</li>
+          <li><strong>Font size scale</strong> &mdash; Adjust the base font size (default: 16px). All other sizes scale proportionally, so a single change updates the entire typographic hierarchy.</li>
+        </ul>
+        
+        <h3>Layout</h3>
+        
+        <p>Under <strong>Theme settings &gt; Layout</strong>, you can control the overall page structure and visual style:</p>
+        
+        <ul>
+          <li><strong>Content width</strong> &mdash; Set the maximum width of the main content area. Default is 1200px. Wider values work well for image-heavy stores.</li>
+          <li><strong>Section spacing</strong> &mdash; Control vertical padding between sections (small, medium, or large). Affects all pages globally.</li>
+          <li><strong>Border radius</strong> &mdash; Set the corner radius for buttons, cards, input fields, and image containers. Use 0 for sharp corners or larger values for a softer look.</li>
+          <li><strong>Enable animations</strong> &mdash; Toggle scroll-triggered fade and slide animations on or off globally. Disabling animations can improve performance on older devices.</li>
+        </ul>
+
+        <!-- Header & Navigation -->
+        <h2 id="header-navigation">Header &amp; Navigation</h2>
+
+        <h3>Logo Setup</h3>
+        
+        <p>Upload your brand logo in the header section settings. For best results, use a transparent PNG or SVG file. Recommended dimensions: height between 40px and 60px. The theme will scale the logo proportionally based on the max-width value you set.</p>
+        
+        <h3>Navigation Menu</h3>
+        
+        <p>Select which Shopify navigation menu to display in the header. Create and manage your menus in <strong>Shopify Admin &gt; Online Store &gt; Navigation</strong>. The theme supports up to three levels of dropdown nesting for standard menus.</p>
+        
+        <h3>Mega Menu</h3>
+        
+        <p>For larger navigation structures, enable the mega menu on specific top-level menu items. Each mega menu column can display:</p>
+        
+        <ul>
+          <li>Featured collections with product images</li>
+          <li>Custom links organized in columns</li>
+          <li>Promotional banners with images and CTAs</li>
+          <li>Brand logos or category icons</li>
+        </ul>
+        
+        <p>To assign a mega menu, go to the header section in the theme editor and use the "Mega menu" blocks. Link each block to the corresponding top-level menu item handle.</p>
+        
+        <h3>Mobile Menu</h3>
+        
+        <p>The mobile menu automatically generates from your desktop navigation. On screens below 768px, the header collapses into a hamburger icon that opens a full-screen overlay menu. The mobile menu supports nested dropdowns with smooth accordion-style expand animations.</p>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Keep your top-level menu items to 6 or fewer for the best desktop experience. On mobile, all levels are accessible through expandable submenus.</p>
+        </div>
+
+        <!-- Hero Slider -->
+        <h2 id="hero-slider">Hero Slider</h2>
+
+        <h3>Adding Slides</h3>
+        
+        <p>The hero slider displays full-width banner slides on your homepage. In the theme editor, select the hero slider section and click <strong>Add slide</strong> to create new slides. Each slide supports:</p>
+        
+        <ul>
+          <li><strong>Desktop image</strong> &mdash; Recommended size: 1920 x 800px or larger. Use high-resolution images for retina displays.</li>
+          <li><strong>Mobile image</strong> &mdash; Optional. If not provided, the desktop image is used with responsive cropping. Recommended: 750 x 1000px for a taller mobile-optimized view.</li>
+          <li><strong>Heading &amp; subheading</strong> &mdash; Overlay text with customizable alignment (left, center, right) and color.</li>
+          <li><strong>Button</strong> &mdash; Call-to-action button with configurable text, URL, and style (filled or outline).</li>
+          <li><strong>Overlay opacity</strong> &mdash; Darken the background image (0% to 80%) for better text readability against busy images.</li>
+        </ul>
+        
+        <h3>Autoplay Settings</h3>
+        
+        <p>Enable automatic slide transitions under the slider section settings. Configure the delay between slides (3 to 10 seconds). Autoplay pauses automatically when a user interacts with the slider or when the browser tab is not active, which is better for accessibility and performance.</p>
+
+        <!-- Product Page -->
+        <h2 id="product-page">Product Page</h2>
+
+        <h3>Variant Picker</h3>
+        
+        <p>The product page supports multiple variant picker styles. In the product section settings, choose between:</p>
+        
+        <ul>
+          <li><strong>Dropdown</strong> &mdash; Standard dropdown selectors for each option (Size, Color, Material, etc.).</li>
+          <li><strong>Buttons</strong> &mdash; Inline pill-style buttons that let customers select variants without opening a dropdown.</li>
+          <li><strong>Color swatches</strong> &mdash; Visual color circles for color-type options that swap the product image on selection.</li>
+        </ul>
+        
+        <h3>Color Swatches</h3>
+        
+        <p>Color swatches display a visual circle representing each color option. When a customer selects a different color, the product image gallery automatically scrolls to the corresponding variant image. To set up color swatches:</p>
+        
+        <ol>
+          <li>Ensure your product has a variant option named <code>Color</code> (or the localized equivalent for your store language).</li>
+          <li>Assign a unique image to each color variant in the Shopify product editor. The swatch will pull the image for that variant.</li>
+          <li>In the theme editor, navigate to the product section and enable <strong>Show color swatches</strong>.</li>
+          <li>Swatch colors are automatically derived from the variant option value name (e.g., "Black" renders a black circle). For custom colors that don't match a standard color name, add a product metafield <code>product.color_hex</code> with the hex value.</li>
+        </ol>
+        
+        <h3>Image Gallery</h3>
+        
+        <p>The product page image gallery supports multiple layouts: stacked, carousel, or thumbnail grid. Images support pinch-to-zoom on mobile and click-to-zoom on desktop. The gallery automatically groups images by variant when variant-specific images are assigned.</p>
+        
+        <h3>Product Tabs</h3>
+        
+        <p>Product tabs appear below the main product details and organize supplementary content into collapsible sections:</p>
+        
+        <ul>
+          <li><strong>Description</strong> &mdash; Automatically populated from the product description field in Shopify.</li>
+          <li><strong>Shipping &amp; Returns</strong> &mdash; Static content configured in <strong>Theme settings &gt; Product tabs</strong>. Write once, display on all products.</li>
+          <li><strong>Size Guide</strong> &mdash; Displays a size chart table or links to a custom page with detailed sizing information.</li>
+          <li><strong>Reviews</strong> &mdash; Integrates with the Shopify Product Reviews app or compatible third-party review apps like Judge.me and Loox.</li>
+        </ul>
+        
+        <p>You can add custom tabs by creating pages in Shopify and assigning them in the product section settings. Each custom tab displays the full page content inline.</p>
+
+        <!-- Collection Page -->
+        <h2 id="collection-page">Collection Page</h2>
+
+        <h3>Filters</h3>
+        
+        <p>Collection pages include a sidebar filter panel powered by Shopify's native storefront filtering API. Filters are automatically generated based on your product data and configured filters. Available filter types include:</p>
+        
+        <ul>
+          <li><strong>Price range slider</strong> &mdash; Interactive dual-handle slider for min/max price filtering.</li>
+          <li><strong>Product type</strong> &mdash; Filter by product type assigned in the Shopify product editor.</li>
+          <li><strong>Vendor / Brand</strong> &mdash; Filter by product vendor for multi-brand stores.</li>
+          <li><strong>Color, Size, and variant options</strong> &mdash; Checkbox or swatch-based filters for all variant options.</li>
+          <li><strong>Availability</strong> &mdash; Toggle between in-stock and out-of-stock products.</li>
+          <li><strong>Tags</strong> &mdash; Filter by product tags for custom categorization.</li>
+        </ul>
+        
+        <p>To configure which filters appear, go to <strong>Shopify Admin &gt; Online Store &gt; Navigation &gt; Collection and search filters</strong>. The theme displays all filters you enable there, styled to match your theme design.</p>
+        
+        <h3>Sort Options</h3>
+        
+        <p>A sort dropdown appears at the top of every collection page. Customers can sort products by: Featured (manual order), Best selling, Alphabetical (A-Z and Z-A), Price (low to high and high to low), and Date (newest and oldest). The selected sort preference updates the page URL for bookmarkable results.</p>
+        
+        <h3>Grid/List Toggle</h3>
+        
+        <p>Customers can switch between grid view and list view on collection pages using toggle buttons at the top of the product grid. Grid view shows product cards in a multi-column layout (2, 3, 4, or 5 columns configurable). List view displays products in a single-column layout with larger images and more visible descriptions. The selected view preference is saved in the browser's localStorage so it persists across page loads and sessions.</p>
+
+        <!-- Cart Drawer -->
+        <h2 id="cart-drawer">Cart Drawer</h2>
+
+        <h3>Setup</h3>
+        
+        <p>The AJAX cart drawer slides in from the right side of the screen when a customer adds a product to the cart, updates without a page reload for a seamless shopping experience. To configure:</p>
+        
+        <ol>
+          <li>In the theme editor, go to <strong>Theme settings &gt; Cart</strong>.</li>
+          <li>Set <strong>Cart type</strong> to <code>Drawer</code>. Alternatively, choose <code>Page</code> for a traditional full-page cart, or <code>Popup</code> for a brief notification.</li>
+          <li>Enable <strong>Cart recommendations</strong> to show complementary products inside the cart drawer.</li>
+          <li>Enable <strong>Cart note</strong> to let customers add special instructions to their order.</li>
+          <li>Toggle <strong>Trust badges</strong> to display security and payment icons below the checkout button.</li>
+        </ol>
+        
+        <h3>Free Shipping Bar</h3>
+        
+        <p>The free shipping bar displays a progress indicator showing how much more the customer needs to spend to qualify for free shipping. It updates dynamically as items are added or removed.</p>
+        
+        <ol>
+          <li>Navigate to <strong>Theme settings &gt; Cart &gt; Free shipping bar</strong>.</li>
+          <li>Enable the free shipping bar toggle.</li>
+          <li>Set the <strong>Free shipping threshold</strong> amount (e.g., $75, $100). This should match your actual shipping policy.</li>
+          <li>Customize the message text. Use the <code>{amount}</code> placeholder for the remaining amount. Example: "You're only {amount} away from free shipping!"</li>
+        </ol>
+        
+        <h3>Auto Discount</h3>
+        
+        <p>If you have automatic discounts configured in Shopify (Admin &gt; Discounts), the cart drawer automatically calculates and displays the discount amount. No additional theme configuration is needed. The discounted price, original price, and savings amount are all shown clearly.</p>
+        
+        <h3>Terms Checkbox</h3>
+        
+        <p>Require customers to agree to your terms and conditions before proceeding to checkout. Enable this under <strong>Theme settings &gt; Cart &gt; Terms checkbox</strong>. Link the checkbox label text to your terms and conditions page. When enabled, the checkout button remains disabled until the checkbox is checked.</p>
+
+        <!-- Wishlist & Compare -->
+        <h2 id="wishlist-compare">Wishlist &amp; Compare</h2>
+
+        <p>Luxe Fashion includes a built-in wishlist and product comparison feature that requires no third-party apps or external services.</p>
+        
+        <h3>How They Work</h3>
+        
+        <p>Both features use the browser's <code>localStorage</code> API to save product selections on the client side. This means data persists across browser sessions on the same device without requiring customer accounts, logins, or any server-side storage.</p>
+        
+        <ul>
+          <li><strong>Wishlist</strong> &mdash; Customers click the heart icon on any product card or product page to add it to their wishlist. A dedicated wishlist page (automatically created at <code>/pages/wishlist</code>) displays all saved products in a grid layout. Products can be added to cart directly from the wishlist or removed individually.</li>
+          <li><strong>Compare</strong> &mdash; Customers can add up to 4 products to a comparison list using the compare icon on product cards. A floating compare bar appears at the bottom of the screen showing selected products. Clicking "Compare" opens a modal with a side-by-side table of product attributes including price, availability, variant options, and description.</li>
+        </ul>
+        
+        <h3>Data Storage</h3>
+        
+        <p>Wishlist and compare data is stored under the keys <code>bebriz_wishlist</code> and <code>bebriz_compare</code> in localStorage. Each entry stores the product handle, title, image URL, price, and availability status. The data is automatically cleaned up if a product is no longer available when the wishlist page loads.</p>
+        
+        <div class="callout">
+          <p><strong>Note:</strong> Since localStorage is browser-specific, wishlist and compare data will not sync across different devices or browsers. If a customer clears their browser data, saved items will be removed. For cross-device persistence, consider integrating a Shopify customer metafield-based solution.</p>
+        </div>
+
+        <!-- Social Proof -->
+        <h2 id="social-proof">Social Proof</h2>
+
+        <p>Social proof notifications display small toast-style popup messages at the bottom of the screen, showing recent purchases or product activity to create urgency and build customer confidence.</p>
+        
+        <h3>Configuration</h3>
+        
+        <p>Enable social proof in <strong>Theme settings &gt; Social proof</strong>. Configure the following options:</p>
+        
+        <ul>
+          <li><strong>Enable notifications</strong> &mdash; Master toggle for the entire feature. Disable to remove all social proof popups.</li>
+          <li><strong>Notification type</strong> &mdash; Choose between "Recent purchases" (displays product name with a randomly generated name and location) or "Current viewers" (shows a count of people viewing a product, e.g., "12 people are viewing this right now").</li>
+          <li><strong>Products to show</strong> &mdash; Select specific products for notifications, or let the theme automatically pull from your best sellers collection.</li>
+          <li><strong>Position</strong> &mdash; Bottom-left or bottom-right corner of the viewport.</li>
+        </ul>
+        
+        <h3>Timing Configuration</h3>
+        
+        <p>Control how often notifications appear and how long they stay visible to balance urgency with user experience:</p>
+        
+        <ul>
+          <li><strong>Initial delay</strong> &mdash; Time in seconds before the first notification appears after page load. Default: 5 seconds. Set higher for a less aggressive feel.</li>
+          <li><strong>Display duration</strong> &mdash; How long each notification stays visible on screen. Default: 4 seconds.</li>
+          <li><strong>Interval</strong> &mdash; Time between consecutive notifications. Default: 15 seconds.</li>
+          <li><strong>Maximum per session</strong> &mdash; Limit the total number of notifications shown per visitor session to avoid fatigue. Default: 10.</li>
+        </ul>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Start with conservative timing (longer delays, fewer per session) and gradually increase based on your conversion data. Overly aggressive notifications can feel spammy and hurt trust.</p>
+        </div>
+
+        <!-- Newsletter Popup -->
+        <h2 id="newsletter-popup">Newsletter Popup</h2>
+
+        <p>The newsletter popup encourages visitors to subscribe to your mailing list, typically in exchange for a discount code on their first purchase.</p>
+        
+        <h3>Setup</h3>
+        
+        <p>Navigate to <strong>Theme settings &gt; Newsletter popup</strong> to configure all popup options:</p>
+        
+        <ul>
+          <li><strong>Enable/Disable</strong> &mdash; Master toggle. When disabled, the popup never appears.</li>
+          <li><strong>Trigger delay</strong> &mdash; Number of seconds after page load before the popup appears. Default: 5 seconds. Set to 0 for immediate display (not recommended for user experience).</li>
+          <li><strong>Exit intent</strong> &mdash; Display the popup when the visitor moves their cursor toward the browser close or back button. Desktop only. This catches visitors who are about to leave.</li>
+          <li><strong>Show frequency</strong> &mdash; Control how often returning visitors see the popup: every visit, once per session, once per day, or once per week. The frequency is tracked via a cookie.</li>
+        </ul>
+        
+        <h3>Content &amp; Styling</h3>
+        
+        <ul>
+          <li><strong>Heading</strong> &mdash; The popup title, e.g., "Get 10% Off Your First Order".</li>
+          <li><strong>Body text</strong> &mdash; Supporting text below the heading explaining the offer.</li>
+          <li><strong>Discount code</strong> &mdash; Optionally display a copyable discount code after successful email submission.</li>
+          <li><strong>Background image</strong> &mdash; Add a promotional image to the left side of the popup for a split-layout design.</li>
+          <li><strong>Form integration</strong> &mdash; The form integrates with your Shopify customer list by default. It can also be connected to Klaviyo, Mailchimp, or other email platforms using their Shopify app integrations.</li>
+        </ul>
+
+        <!-- Digital Products Features -->
+        <h2 id="digital-features">Digital Products Features</h2>
+
+        <h3>Dark Mode</h3>
+        
+        <p>Pixelmart is a full dark mode theme. Every element &mdash; header, footer, product cards, cart drawer, modals, popups, and all UI components &mdash; is styled with a dark background palette, glassmorphism card effects, and neon accent colors.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>Dark mode is the default and only mode for Pixelmart. No toggle is needed.</li>
+          <li>To customize dark colors, go to <strong>Theme settings &gt; Colors</strong>.</li>
+          <li>Adjustable settings include:</li>
+        </ol>
+        
+        <ul>
+          <li><strong>Background</strong> &mdash; Main page background (default: <code>#0a0a0f</code>)</li>
+          <li><strong>Surface</strong> &mdash; Card and section backgrounds (default: <code>#14141f</code>)</li>
+          <li><strong>Border</strong> &mdash; Subtle borders and dividers</li>
+          <li><strong>Text</strong> &mdash; Primary and secondary text colors</li>
+          <li><strong>Accent</strong> &mdash; Neon highlight color used for buttons, links, and badges</li>
+        </ul>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Keep contrast ratios above 4.5:1 for accessibility. The default palette is WCAG AA compliant.</p>
+        </div>
+        
+        <h3>File Info Display</h3>
+        
+        <p>The file info display shows format, file size, version number, and last update date on product pages, giving buyers essential details about the digital product before purchasing.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>Create the following <strong>product metafields</strong> in Shopify Admin:</li>
+        </ol>
+        
+        <ul>
+          <li><code>custom.file_format</code> (Single line text) &mdash; e.g., "PSD", "AI", "FIGMA", "ZIP"</li>
+          <li><code>custom.file_size</code> (Single line text) &mdash; e.g., "245 MB"</li>
+          <li><code>custom.file_version</code> (Single line text) &mdash; e.g., "2.1.0"</li>
+          <li><code>custom.last_updated</code> (Date) &mdash; The date of the last file update</li>
+        </ul>
+        
+        <ol>
+          <li>The info box renders automatically on any product page where at least one metafield has a value.</li>
+          <li>To reorder or hide specific fields, go to <strong>Theme settings &gt; Product Page &gt; File Info</strong>.</li>
+        </ol>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Keep file size and version up to date whenever you release a new version. Customers value transparency about what they are downloading.</p>
+        </div>
+        
+        <h3>File Tree Preview</h3>
+        
+        <p>The file tree preview displays a terminal-style representation of the ZIP file structure, so buyers can see exactly what files are included before purchasing.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>Create a <strong>product metafield</strong> with the namespace and key <code>custom.file_tree</code>.</li>
+          <li>Set the metafield type to <strong>Multi-line text</strong>.</li>
+          <li>Enter the file structure using indented plain text, for example:</li>
+        </ol>
+        
+        <pre><code>   ui-kit-v2.zip
+           ├── Components/
+           │   ├── Buttons.psd
+           │   ├── Cards.psd
+           │   └── Forms.psd
+           ├── Icons/
+           │   ├── icon-set-outlined.svg
+           │   └── icon-set-filled.svg
+           ├── README.md
+           └── License.txt</code></pre>
+        
+        <ol>
+          <li>If no metafield is set, a default placeholder tree is displayed showing a generic file structure.</li>
+        </ol>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Use tree-drawing characters (├── │ └──) for an authentic terminal look. The theme renders them in a monospace font with dark terminal styling.</p>
+        </div>
+        
+        <h3>Compatibility Checker</h3>
+        
+        <p>The compatibility checker displays checkmark badges for supported software (Photoshop, Figma, Sketch, Illustrator, etc.) on the product page, helping buyers confirm the file works with their tools.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>Create a <strong>product metafield</strong> with the namespace and key <code>custom.compatibility</code>.</li>
+          <li>Set the metafield type to <strong>Single line text (List)</strong>.</li>
+          <li>Add entries for each supported application, e.g., <code>Photoshop</code>, <code>Figma</code>, <code>Sketch</code>, <code>Illustrator</code>, <code>XD</code>.</li>
+          <li>The theme renders each entry as a checkmark badge with the application icon.</li>
+        </ol>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Use consistent application names across products so customers can filter by compatibility.</p>
+        </div>
+        
+        <h3>License Selector</h3>
+        
+        <p>The license selector displays product variants as styled radio cards instead of a standard dropdown, ideal for Personal, Commercial, and Extended license tiers.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>In <strong>Shopify Admin &gt; Products</strong>, create a product option named <code>License</code> (or your preferred name).</li>
+          <li>Add variants such as:</li>
+        </ol>
+        
+        <ul>
+          <li><strong>Personal</strong> &mdash; $29</li>
+          <li><strong>Commercial</strong> &mdash; $59</li>
+          <li><strong>Extended</strong> &mdash; $99</li>
+        </ul>
+        
+        <ol>
+          <li>The theme automatically detects the variant option and renders radio cards with the variant name and price.</li>
+          <li>To add descriptions to each license tier, create a <strong>product metafield</strong> <code>custom.license_descriptions</code> (JSON) with the format:</li>
+        </ol>
+        
+        <pre><code>   {
+             &quot;Personal&quot;: &quot;For personal, non-commercial projects&quot;,
+             &quot;Commercial&quot;: &quot;For client work and commercial projects&quot;,
+             &quot;Extended&quot;: &quot;Unlimited usage including SaaS and resale&quot;
+           }</code></pre>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Keep license tier names short (1-2 words) for the cleanest card layout.</p>
+        </div>
+        
+        <h3>License Table</h3>
+        
+        <p>The license table section displays a side-by-side comparison of license tiers with feature checkmarks, helping buyers choose the right license.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; License Table</strong> on the product page template.</li>
+          <li>Configure the table columns (one per license tier).</li>
+          <li>For each tier, set:</li>
+        </ol>
+        
+        <ul>
+          <li><strong>Tier Name</strong> &mdash; e.g., "Personal", "Commercial", "Extended"</li>
+          <li><strong>Price</strong> &mdash; e.g., "$29", "$59", "$99"</li>
+          <li><strong>Features</strong> &mdash; Toggle checkmarks for each feature row</li>
+        </ul>
+        
+        <ol>
+          <li>Feature rows are shared across all tiers and configured in the section settings.</li>
+        </ol>
+        
+        <p><strong>Default feature rows include:</strong></p>
+        
+        <ul>
+          <li>Use in personal projects</li>
+          <li>Use in commercial projects</li>
+          <li>Use in client projects</li>
+          <li>Modify and edit</li>
+          <li>Remove attribution</li>
+          <li>Use in SaaS products</li>
+          <li>Resale/redistribution rights</li>
+        </ul>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Highlight the most popular tier with the "Recommended" badge option in the tier settings.</p>
+        </div>
+        
+        <h3>Bundle Builder</h3>
+        
+        <p>The bundle builder section lets customers select multiple digital products and add them all to cart with a bundle discount.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; Bundle Builder</strong> on any page template.</li>
+          <li>Configure the section settings:</li>
+        </ol>
+        
+        <ul>
+          <li><strong>Title</strong> &mdash; e.g., "Build Your Bundle"</li>
+          <li><strong>Collection</strong> &mdash; Select the collection of products to display</li>
+          <li><strong>Minimum items</strong> &mdash; Minimum products to qualify for discount (default: 2)</li>
+          <li><strong>Discount percentage</strong> &mdash; Bundle discount amount (default: 20%)</li>
+        </ul>
+        
+        <ol>
+          <li>Customers check products they want, the section calculates the total with discount, and clicking "Add Bundle to Cart" adds all selected products.</li>
+        </ol>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Create a dedicated "Bundle Eligible" collection for curated bundle offerings rather than using your entire catalog.</p>
+        </div>
+        
+        <h3>Format Badge</h3>
+        
+        <p>Format badges display file type indicators (PSD, AI, FIGMA, SVG, etc.) on product cards in collection pages and grids, helping buyers identify file formats at a glance.</p>
+        
+        <p><strong>Setup:</strong></p>
+        
+        <ol>
+          <li>Add product tags using the format <code>format:PSD</code>, <code>format:AI</code>, <code>format:FIGMA</code>, etc.</li>
+          <li>The theme automatically reads tags prefixed with <code>format:</code> and renders them as small colored badges on the product card.</li>
+          <li>To customize badge colors per format, go to <strong>Theme settings &gt; Product Card &gt; Format Badges</strong>.</li>
+        </ol>
+        
+        <p><strong>Default format colors:</strong></p>
+        
+        <ul>
+          <li><strong>PSD</strong> &mdash; Blue</li>
+          <li><strong>AI</strong> &mdash; Orange</li>
+          <li><strong>FIGMA</strong> &mdash; Purple</li>
+          <li><strong>SKETCH</strong> &mdash; Yellow</li>
+          <li><strong>SVG</strong> &mdash; Green</li>
+          <li><strong>ZIP</strong> &mdash; Gray</li>
+        </ul>
+        
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Use consistent format tag names across your catalog. A product can have multiple format badges if it includes several file types.</p>
+        </div>
+        
+        <h3>Reviews (App Required)</h3>
+        
+        <p>The theme provides a "Reviews" tab on product pages and star rating displays on product cards. However, <strong>actual review collection and display requires a Shopify app</strong>.</p>
+        
+        <p>| App | Cost | Best For | |-----|------|----------| | <strong>Shopify Product Reviews</strong> | Free | Basic review needs | | <strong>Judge.me</strong> | Free tier | Most popular, photo reviews, email requests | | <strong>Loox</strong> | $9.99/mo | Photo &amp; video reviews | | <strong>Stamped.io</strong> | Free tier | Reviews + loyalty integration |</p>
+        
+        <p>After installing a review app, reviews will automatically appear in the Reviews tab. Star ratings on product cards pull from the app's data.</p>
+        
+        <div class="callout">
+          <p><strong>Note:</strong> Without a review app installed, the Reviews tab will be empty and star ratings will show as placeholder.</p>
+        </div>
+        
+        <h3>Subscription Products (App Required)</h3>
+        
+        <p>The theme displays "Subscribe &amp; Save" badges on product cards for products tagged with <code>subscription</code>. However, <strong>actual subscription checkout requires a Shopify subscription app</strong>.</p>
+        
+        <p>| App | Cost | Best For | |-----|------|----------| | <strong>Shopify Subscriptions</strong> | Free | Basic subscription needs | | <strong>Recharge</strong> | $99/mo | Advanced features, analytics | | <strong>Loop Subscriptions</strong> | $99/mo | Growing brands | | <strong>Seal Subscriptions</strong> | Free tier | Small stores getting started |</p>
+        
+        <p><strong>What the theme provides:</strong></p>
+        
+        <ul>
+          <li>Visual "Subscribe &amp; Save" badge on product cards (tag-based)</li>
+          <li>Badge text customizable in Theme Settings &gt; Product Card</li>
+        </ul>
+        
+        <p><strong>What the app provides:</strong></p>
+        
+        <ul>
+          <li>Subscription checkout widget on product pages</li>
+          <li>Recurring billing and order management</li>
+          <li>Customer subscription portal</li>
+        </ul>
+        
+        <p>After installing a subscription app, its widget will appear on product pages automatically alongside the theme's visual badges.</p>
+
+        <!-- License & Activation -->
+        <h2 id="license-activation">License &amp; Activation</h2>
+
+        <h3>License Terms</h3>
+        
+        <p>Each Luxe Fashion purchase grants you a single-store license. This means you may install and use the theme on:</p>
+        
+        <ul>
+          <li>One (1) live production Shopify store</li>
+          <li>One (1) development or staging store for testing purposes</li>
+        </ul>
+        
+        <p>Using the theme on additional production stores requires purchasing additional licenses. Contact our support team for multi-license pricing.</p>
+        
+        <h3>Activation Process</h3>
+        
+        <p>After purchasing the theme, you will receive a license key via email. To activate:</p>
+        
+        <ol>
+          <li>Install the theme on your Shopify store following the installation steps above.</li>
+          <li>Open the theme editor and navigate to <strong>Theme settings &gt; License</strong>.</li>
+          <li>Enter your license key in the <strong>License key</strong> field.</li>
+          <li>Click <strong>Save</strong>. The theme will verify your license against our server and activate all premium features.</li>
+        </ol>
+        
+        <h3>Domain Verification</h3>
+        
+        <p>Your license is tied to a single Shopify store domain. During activation, the theme records your store's <code>.myshopify.com</code> domain as the authorized installation. This is a one-time process. If you need to transfer the theme to a different store or change your store domain, contact our support team with your license key and the new domain to update the verification record.</p>
+        
+        <div class="callout">
+          <p><strong>Note:</strong> Each license allows installation on one production store and one development/staging store. The development store must use a <code>.myshopify.com</code> domain (not a custom domain) to be recognized as a development installation. Contact support if you encounter any activation issues.</p>
+        </div>
+        
+        <h3>Need Help?</h3>
+        
+        <p>If you cannot find the answer to your question in this documentation, visit our <a href="../../support/index.html">support page</a> to contact our team directly. We typically respond within 24 hours on business days.</p>
+
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo"><span>be</span>Briz</a>
+          <p>Premium Shopify themes for modern e-commerce. Designed and developed with an obsession for quality, performance, and detail.</p>
+          <div class="footer-tagline">Powered by beBriz</div>
+        </div>
+        <div class="footer-col">
+          <h4>Themes</h4>
+          <a href="../../themes/luxe-fashion/index.html">Luxe Fashion</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="../../docs/index.html">Documentation</a>
+          <a href="../../support/index.html">Support</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Dribbble">Dr</a>
+          </div>
+          <a href="../../support/index.html#contact" style="margin-top: 12px;">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 beBriz. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

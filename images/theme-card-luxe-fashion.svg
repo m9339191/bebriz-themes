@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="tcHeroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#222;stop-opacity:0.7"/>
+      <stop offset="100%" style="stop-color:#222;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="tcShadow1">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="tcShadow2">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F8F8FA"/>
+
+  <!-- Subtle grid pattern -->
+  <line x1="0" y1="100" x2="600" y2="100" stroke="#F0F0F0" stroke-width="1"/>
+  <line x1="0" y1="200" x2="600" y2="200" stroke="#F0F0F0" stroke-width="1"/>
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#F0F0F0" stroke-width="1"/>
+  <line x1="150" y1="0" x2="150" y2="400" stroke="#F0F0F0" stroke-width="1"/>
+  <line x1="300" y1="0" x2="300" y2="400" stroke="#F0F0F0" stroke-width="1"/>
+  <line x1="450" y1="0" x2="450" y2="400" stroke="#F0F0F0" stroke-width="1"/>
+
+  <!-- Desktop Browser (left, larger) -->
+  <g filter="url(#tcShadow1)">
+    <rect x="30" y="30" width="360" height="240" rx="6" fill="#FFFFFF"/>
+    <!-- Chrome -->
+    <rect x="30" y="30" width="360" height="24" rx="6" fill="#2D2D2D"/>
+    <rect x="30" y="48" width="360" height="6" fill="#2D2D2D"/>
+    <circle cx="48" cy="42" r="4" fill="#FF5F56"/>
+    <circle cx="62" cy="42" r="4" fill="#FFBD2E"/>
+    <circle cx="76" cy="42" r="4" fill="#27C93F"/>
+    <rect x="120" y="34" width="200" height="14" rx="3" fill="#1A1A1A"/>
+    <text x="165" y="45" font-family="sans-serif" font-size="7" fill="#999">luxe-fashion.myshopify.com</text>
+
+    <!-- Page content -->
+    <rect x="30" y="54" width="360" height="216" fill="#FFFFFF"/>
+
+    <!-- Mini nav -->
+    <text x="45" y="70" font-family="sans-serif" font-size="8" font-weight="700" fill="#222">LUXE FASHION</text>
+
+    <!-- Hero -->
+    <rect x="30" y="78" width="360" height="110" fill="#E8E8E8"/>
+    <rect x="30" y="78" width="360" height="110" fill="url(#tcHeroGrad)"/>
+    <text x="50" y="130" font-family="sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">New Collection</text>
+    <text x="50" y="148" font-family="sans-serif" font-size="9" fill="rgba(255,255,255,0.7)">Discover the latest styles</text>
+    <rect x="50" y="155" width="60" height="16" rx="3" fill="#FFF"/>
+    <text x="62" y="167" font-family="sans-serif" font-size="7" font-weight="600" fill="#222">Shop Now</text>
+
+    <!-- Mini product cards -->
+    <rect x="40" y="200" width="78" height="60" rx="4" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+    <rect x="126" y="200" width="78" height="60" rx="4" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+    <rect x="212" y="200" width="78" height="60" rx="4" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+    <rect x="298" y="200" width="78" height="60" rx="4" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+  </g>
+
+  <!-- Mobile Phone (right, smaller) -->
+  <g filter="url(#tcShadow2)">
+    <rect x="430" y="55" width="130" height="230" rx="16" fill="#1A1A1A"/>
+    <rect x="436" y="65" width="118" height="210" rx="12" fill="#FFFFFF"/>
+
+    <!-- Status bar -->
+    <rect x="436" y="65" width="118" height="14" rx="12" fill="#FAFAFA"/>
+    <text x="446" y="76" font-family="sans-serif" font-size="6" font-weight="600" fill="#222">9:41</text>
+
+    <!-- Notch -->
+    <rect x="474" y="65" width="36" height="10" rx="5" fill="#1A1A1A"/>
+
+    <!-- Mobile nav -->
+    <rect x="446" y="83" width="8" height="1.5" rx="0.5" fill="#222"/>
+    <rect x="446" y="86.5" width="6" height="1.5" rx="0.5" fill="#222"/>
+    <rect x="446" y="90" width="8" height="1.5" rx="0.5" fill="#222"/>
+    <text x="495" y="90" font-family="sans-serif" font-size="7" font-weight="700" fill="#222" text-anchor="middle">LUXE</text>
+
+    <!-- Mobile hero -->
+    <rect x="436" y="96" width="118" height="65" fill="#E8E8E8"/>
+    <rect x="436" y="96" width="118" height="65" fill="url(#tcHeroGrad)" opacity="0.8"/>
+    <text x="448" y="135" font-family="sans-serif" font-size="10" font-weight="700" fill="#FFF">Summer</text>
+    <text x="448" y="148" font-family="sans-serif" font-size="10" font-weight="700" fill="#FFF">Collection</text>
+
+    <!-- 2-col product grid -->
+    <rect x="440" y="170" width="52" height="50" rx="3" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+    <rect x="498" y="170" width="52" height="50" rx="3" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+    <rect x="440" y="226" width="52" height="50" rx="3" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+    <rect x="498" y="226" width="52" height="50" rx="3" fill="#F0F0F0" stroke="#E5E5E5" stroke-width="0.5"/>
+
+    <!-- Home indicator -->
+    <rect x="476" y="268" width="32" height="3" rx="1.5" fill="#1A1A1A"/>
+  </g>
+
+  <!-- Label -->
+  <text x="300" y="345" font-family="sans-serif" font-size="22" font-weight="700" fill="#222" text-anchor="middle">Luxe Fashion</text>
+  <text x="300" y="367" font-family="sans-serif" font-size="12" fill="#888" text-anchor="middle">Premium Shopify Theme by beBriz</text>
+</svg>

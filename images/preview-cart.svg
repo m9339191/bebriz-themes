@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <filter id="cartShadow">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+    <filter id="drawerShadow">
+      <feDropShadow dx="-4" dy="0" stdDeviation="20" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Frame -->
+  <rect x="16" y="16" width="768" height="468" rx="8" fill="#fff" filter="url(#cartShadow)"/>
+
+  <!-- Browser Chrome -->
+  <rect x="16" y="16" width="768" height="36" rx="8" fill="#2D2D2D"/>
+  <rect x="16" y="40" width="768" height="12" fill="#2D2D2D"/>
+  <circle cx="40" cy="34" r="5" fill="#FF5F56"/>
+  <circle cx="56" cy="34" r="5" fill="#FFBD2E"/>
+  <circle cx="72" cy="34" r="5" fill="#27C93F"/>
+  <rect x="180" y="25" width="400" height="18" rx="4" fill="#1A1A1A"/>
+  <text x="280" y="38" font-family="sans-serif" font-size="10" fill="#999">luxe-fashion.myshopify.com</text>
+
+  <!-- Page Content (dimmed) -->
+  <rect x="16" y="52" width="768" height="432" fill="#FFFFFF"/>
+
+  <!-- Dimmed page content behind overlay -->
+  <rect x="16" y="52" width="468" height="432" fill="#F5F5F5"/>
+  <!-- Faux content lines -->
+  <rect x="50" y="80" width="200" height="12" rx="3" fill="#E8E8E8"/>
+  <rect x="50" y="100" width="350" height="8" rx="3" fill="#EEEEEE"/>
+  <rect x="50" y="115" width="300" height="8" rx="3" fill="#EEEEEE"/>
+  <rect x="50" y="150" width="180" height="120" rx="6" fill="#EBEBEB"/>
+  <rect x="250" y="150" width="180" height="120" rx="6" fill="#EBEBEB"/>
+
+  <!-- Overlay -->
+  <rect x="16" y="52" width="468" height="432" fill="rgba(0,0,0,0.4)"/>
+
+  <!-- Cart Drawer -->
+  <rect x="484" y="52" width="300" height="432" fill="#FFFFFF" filter="url(#drawerShadow)"/>
+
+  <!-- Cart Header -->
+  <text x="510" y="82" font-family="sans-serif" font-size="16" font-weight="700" fill="#222">Your Cart (3)</text>
+  <!-- Close button -->
+  <text x="750" y="82" font-family="sans-serif" font-size="18" fill="#888">&#215;</text>
+
+  <!-- Free Shipping Bar -->
+  <rect x="510" y="95" width="250" height="24" rx="4" fill="#F5F5F5"/>
+  <rect x="510" y="95" width="180" height="24" rx="4" fill="#E8F5E9"/>
+  <text x="530" y="112" font-family="sans-serif" font-size="9" fill="#555">$12 away from free shipping!</text>
+
+  <line x1="510" y1="130" x2="760" y2="130" stroke="#F0F0F0" stroke-width="1"/>
+
+  <!-- Cart Item 1 -->
+  <rect x="510" y="140" width="55" height="55" rx="4" fill="#EBEBEB"/>
+  <g>
+    <text x="575" y="157" font-family="sans-serif" font-size="11" font-weight="600" fill="#222">Classic Oxford Shirt</text>
+    <text x="575" y="172" font-family="sans-serif" font-size="9" fill="#888">Navy / M</text>
+    <text x="575" y="188" font-family="sans-serif" font-size="11" font-weight="600" fill="#222">$89</text>
+    <!-- Qty buttons -->
+    <rect x="700" y="170" width="20" height="18" rx="3" fill="#F5F5F5" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="707" y="183" font-family="sans-serif" font-size="10" fill="#555" text-anchor="middle">-</text>
+    <text x="728" y="183" font-family="sans-serif" font-size="10" fill="#222">1</text>
+    <rect x="738" y="170" width="20" height="18" rx="3" fill="#F5F5F5" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="745" y="183" font-family="sans-serif" font-size="10" fill="#555" text-anchor="middle">+</text>
+  </g>
+
+  <line x1="510" y1="205" x2="760" y2="205" stroke="#F0F0F0" stroke-width="1"/>
+
+  <!-- Cart Item 2 -->
+  <rect x="510" y="215" width="55" height="55" rx="4" fill="#EBEBEB"/>
+  <g>
+    <text x="575" y="232" font-family="sans-serif" font-size="11" font-weight="600" fill="#222">Silk Midi Dress</text>
+    <text x="575" y="247" font-family="sans-serif" font-size="9" fill="#888">Black / S</text>
+    <text x="575" y="263" font-family="sans-serif" font-size="11" font-weight="600" fill="#222">$219</text>
+    <rect x="700" y="245" width="20" height="18" rx="3" fill="#F5F5F5" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="707" y="258" font-family="sans-serif" font-size="10" fill="#555" text-anchor="middle">-</text>
+    <text x="728" y="258" font-family="sans-serif" font-size="10" fill="#222">1</text>
+    <rect x="738" y="245" width="20" height="18" rx="3" fill="#F5F5F5" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="745" y="258" font-family="sans-serif" font-size="10" fill="#555" text-anchor="middle">+</text>
+  </g>
+
+  <line x1="510" y1="280" x2="760" y2="280" stroke="#F0F0F0" stroke-width="1"/>
+
+  <!-- Cart Item 3 -->
+  <rect x="510" y="290" width="55" height="55" rx="4" fill="#EBEBEB"/>
+  <g>
+    <text x="575" y="307" font-family="sans-serif" font-size="11" font-weight="600" fill="#222">Leather Tote Bag</text>
+    <text x="575" y="322" font-family="sans-serif" font-size="9" fill="#888">Tan</text>
+    <text x="575" y="338" font-family="sans-serif" font-size="11" font-weight="600" fill="#222">$329</text>
+    <rect x="700" y="320" width="20" height="18" rx="3" fill="#F5F5F5" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="707" y="333" font-family="sans-serif" font-size="10" fill="#555" text-anchor="middle">-</text>
+    <text x="728" y="333" font-family="sans-serif" font-size="10" fill="#222">1</text>
+    <rect x="738" y="320" width="20" height="18" rx="3" fill="#F5F5F5" stroke="#E5E5E5" stroke-width="1"/>
+    <text x="745" y="333" font-family="sans-serif" font-size="10" fill="#555" text-anchor="middle">+</text>
+  </g>
+
+  <line x1="510" y1="358" x2="760" y2="358" stroke="#F0F0F0" stroke-width="1"/>
+
+  <!-- Subtotal -->
+  <text x="510" y="385" font-family="sans-serif" font-size="12" fill="#888">Subtotal</text>
+  <text x="740" y="385" font-family="sans-serif" font-size="14" font-weight="700" fill="#222" text-anchor="end">$637</text>
+  <text x="510" y="405" font-family="sans-serif" font-size="9" fill="#999">Shipping calculated at checkout</text>
+
+  <!-- Checkout Button -->
+  <rect x="510" y="420" width="250" height="44" rx="6" fill="#222"/>
+  <text x="598" y="447" font-family="sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Checkout</text>
+
+  <!-- Continue Shopping -->
+  <text x="580" y="478" font-family="sans-serif" font-size="11" fill="#888" text-decoration="underline">Continue Shopping</text>
+</svg>

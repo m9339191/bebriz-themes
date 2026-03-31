@@ -1,0 +1,34 @@
+{
+  "keys": [
+    {
+      "key": "BEBRIZ-LUXF-T3KR9WM2-09UA",
+      "theme": "luxe-fashion",
+      "email": "demo@bebriz.com",
+      "domain": null,
+      "dev_domain": null,
+      "created": "2026-03-18",
+      "activated": null,
+      "status": "active"
+    },
+    {
+      "key": "BEBRIZ-LUXF-N7HP4JX6-09QP",
+      "theme": "luxe-fashion",
+      "email": "buyer@example.com",
+      "domain": null,
+      "dev_domain": null,
+      "created": "2026-03-18",
+      "activated": null,
+      "status": "active"
+    },
+    {
+      "key": "BEBRIZ-LUXI-R5WA8MK3-09MQ",
+      "theme": "luxe-interior",
+      "email": "test@example.com",
+      "domain": null,
+      "dev_domain": null,
+      "created": "2026-03-18",
+      "activated": null,
+      "status": "active"
+    }
+  ]
+}
