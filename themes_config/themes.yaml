@@ -405,8 +405,8 @@ themes:
     price: "$59"
     price_note: "One-time payment"
     category: kids
-    demo_url: ""
-    demo_password: ""
+    demo_url: "https://joylittle.myshopify.com/"
+    demo_password: "steede"
     badges:
       - "Shopify 2.0"
       - "Responsive"
