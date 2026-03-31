@@ -174,8 +174,8 @@ themes:
     price: "$59"
     price_note: "One-time payment"
     category: supplements
-    demo_url: "https://moontemplate.myshopify.com/"
-    demo_password: "yaopub"
+    demo_url: "https://boostvita.myshopify.com/"
+    demo_password: "skaong"
     badges:
       - "Shopify 2.0"
       - "Responsive"
