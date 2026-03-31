@@ -328,7 +328,7 @@ themes:
     price: "$59"
     price_note: "One-time payment"
     category: digital
-    demo_url: "https://moontemplate.myshopify.com/"
+    demo_url: "https://martpixcel.myshopify.com/"
     demo_password: "thiemo"
     badges:
       - "Shopify 2.0"
