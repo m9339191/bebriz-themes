@@ -482,8 +482,8 @@ themes:
     price: "$79"
     price_note: "One-time payment"
     category: jewelry
-    demo_url: ""
-    demo_password: ""
+    demo_url: "https://brilliancesroom.myshopify.com/"
+    demo_password: "paugai"
     badges:
       - "Shopify 2.0"
       - "Responsive"
