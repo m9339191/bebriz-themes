@@ -97,8 +97,8 @@ themes:
     price: "$59"
     price_note: "One-time payment"
     category: pet
-    demo_url: "https://moontemplate.myshopify.com/"
-    demo_password: "yaopub"
+    demo_url: "https://wellnesspet.myshopify.com/"
+    demo_password: "iagaun"
     badges:
       - "Shopify 2.0"
       - "Responsive"
