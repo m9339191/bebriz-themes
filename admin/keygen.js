@@ -16,7 +16,14 @@ var BeBrizKeygen = (function () {
     'luxe-fashion':  'LUXF',
     'luxe-interior': 'LUXI',
     'luxe-tech':     'LUXT',
-    'luxe-gourmet':  'LUXG'
+    'luxe-gourmet':  'LUXG',
+    'pawsome':       'PAWS',
+    'vitaboost':     'VITA',
+    'brewhaus':      'BREW',
+    'pixelmart':     'PIXL',
+    'littlejoy':     'LTJY',
+    'brilliance':    'BRIL',
+    'haus-heim':     'HAUS'
   };
 
   var THEME_HANDLES = {};

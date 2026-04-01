@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You — beBriz Themes</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{min-height:100vh;background:#0A0A0B;color:#F5F5F7;font-family:'Inter',-apple-system,sans-serif;display:flex;align-items:center;justify-content:center}
+    .container{max-width:560px;width:100%;padding:40px 24px;text-align:center}
+
+    /* Loading state */
+    .spinner{width:40px;height:40px;border:3px solid rgba(255,255,255,0.1);border-top-color:#6366F1;border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .loading-text{opacity:.6;font-size:.95rem}
+
+    /* Success state */
+    .success{display:none}
+    .checkmark{width:64px;height:64px;background:#22C55E;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:32px}
+    h1{font-size:1.75rem;font-weight:700;margin-bottom:8px}
+    .theme-name{color:#A78BFA;font-size:1.1rem;margin-bottom:32px}
+
+    .license-box{background:#1A1A1D;border:1px solid #2A2A2D;border-radius:12px;padding:24px;margin-bottom:24px;text-align:left}
+    .license-label{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:#888;margin-bottom:8px}
+    .license-key{font-family:'JetBrains Mono',monospace;font-size:1.05rem;color:#F5F5F7;background:#111;border:1px solid #333;border-radius:8px;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;word-break:break-all}
+    .license-key code{flex:1}
+    .copy-btn{background:#6366F1;color:#fff;border:none;padding:8px 16px;border-radius:6px;cursor:pointer;font-size:.85rem;white-space:nowrap;transition:background .2s}
+    .copy-btn:hover{background:#5558E6}
+    .copy-btn.copied{background:#22C55E}
+
+    .instructions{font-size:.85rem;color:#999;line-height:1.6;margin-bottom:24px;text-align:left}
+    .instructions strong{color:#ccc}
+
+    .download-btn{display:inline-flex;align-items:center;gap:8px;background:#6366F1;color:#fff;text-decoration:none;padding:14px 32px;border-radius:8px;font-size:1rem;font-weight:600;transition:background .2s}
+    .download-btn:hover{background:#5558E6}
+    .download-btn svg{width:20px;height:20px}
+
+    .email-note{margin-top:20px;font-size:.8rem;color:#666}
+
+    /* Error state */
+    .error{display:none}
+    .error-icon{width:64px;height:64px;background:#EF4444;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:32px}
+    .error p{color:#999;margin-top:12px;font-size:.95rem}
+    .error a{color:#6366F1;text-decoration:underline}
+
+    .brand{margin-top:40px;opacity:.3;font-size:.8rem}
+    .brand a{color:inherit;text-decoration:none}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Loading -->
+    <div id="loading">
+      <div class="spinner"></div>
+      <p class="loading-text">Verifying your purchase...</p>
+    </div>
+
+    <!-- Success -->
+    <div id="success" class="success">
+      <div class="checkmark">&#10003;</div>
+      <h1>Thank You!</h1>
+      <p class="theme-name" id="themeName"></p>
+
+      <div class="license-box">
+        <div class="license-label">Your License Key</div>
+        <div class="license-key">
+          <code id="licenseKey"></code>
+          <button class="copy-btn" onclick="copyKey()">Copy</button>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <strong>How to activate:</strong><br>
+        Shopify Admin &rarr; Online Store &rarr; Themes &rarr; Customize &rarr; Theme Settings &rarr; License &rarr; Paste your key
+      </div>
+
+      <a id="downloadLink" href="#" class="download-btn">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
+        Download Theme
+      </a>
+
+      <p class="email-note" id="emailNote"></p>
+    </div>
+
+    <!-- Error -->
+    <div id="error" class="error">
+      <div class="error-icon">&#10007;</div>
+      <h1>Something went wrong</h1>
+      <p id="errorMsg">We couldn't verify your purchase.</p>
+      <p>Please contact <a href="mailto:support@bebriz.com">support@bebriz.com</a> with your order details.</p>
+    </div>
+
+    <div class="brand"><a href="https://theme.bebriz.com">beBriz Themes</a></div>
+  </div>
+
+  <script>
+    // Worker API base URL — update after deploying Cloudflare Worker
+    var API_BASE = 'https://bebriz-api.YOURACCOUNT.workers.dev';
+
+    var params = new URLSearchParams(window.location.search);
+    var sessionId = params.get('session_id');
+
+    if (!sessionId) {
+      showError('No session ID found. Please use the link from your email receipt.');
+    } else {
+      verifyPurchase(sessionId);
+    }
+
+    function verifyPurchase(sid) {
+      fetch(API_BASE + '/api/verify-purchase', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ session_id: sid })
+      })
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        if (data.success) {
+          showSuccess(data);
+        } else {
+          showError(data.error || 'Purchase verification failed.');
+        }
+      })
+      .catch(function(err) {
+        showError('Network error. Please try refreshing the page.');
+      });
+    }
+
+    function showSuccess(data) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('success').style.display = 'block';
+      document.getElementById('themeName').textContent = data.theme_name;
+      document.getElementById('licenseKey').textContent = data.license_key;
+      document.getElementById('downloadLink').href = API_BASE + '/api/download?token=' + encodeURIComponent(data.download_token);
+
+      if (data.email) {
+        document.getElementById('emailNote').textContent = 'A copy has been sent to ' + data.email;
+      }
+    }
+
+    function showError(msg) {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('error').style.display = 'block';
+      document.getElementById('errorMsg').textContent = msg;
+    }
+
+    function copyKey() {
+      var key = document.getElementById('licenseKey').textContent;
+      navigator.clipboard.writeText(key).then(function() {
+        var btn = document.querySelector('.copy-btn');
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() {
+          btn.textContent = 'Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
