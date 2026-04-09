@@ -75,9 +75,14 @@
         Shopify Admin &rarr; Online Store &rarr; Themes &rarr; Customize &rarr; Theme Settings &rarr; License &rarr; Paste your key
       </div>
 
+      <a id="installLink" href="#" class="download-btn" style="background:#22C55E;margin-bottom:12px">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" style="width:20px;height:20px"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Install to My Store
+      </a>
+
       <a id="downloadLink" href="#" class="download-btn">
         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 15V3"/></svg>
-        Download Theme
+        Download ZIP
       </a>
 
       <p class="email-note" id="emailNote"></p>
@@ -132,6 +137,7 @@
       document.getElementById('themeName').textContent = data.theme_name;
       document.getElementById('licenseKey').textContent = data.license_key;
       document.getElementById('downloadLink').href = API_BASE + '/api/download?token=' + encodeURIComponent(data.download_token);
+      document.getElementById('installLink').href = API_BASE + '/api/install?theme=' + encodeURIComponent(data.theme) + '&session_id=' + encodeURIComponent(sessionId);
 
       if (data.email) {
         document.getElementById('emailNote').textContent = 'A copy has been sent to ' + data.email;
