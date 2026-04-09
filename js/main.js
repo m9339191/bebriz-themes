@@ -257,23 +257,31 @@ document.addEventListener('DOMContentLoaded', function () {
   var catalogCards = document.querySelectorAll('.catalog-card');
 
   if (filterBtns.length && catalogCards.length) {
+    function applyFilter(filter) {
+      catalogCards.forEach(function (card) {
+        var category = card.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
     filterBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         var filter = btn.getAttribute('data-filter');
-
         filterBtns.forEach(function (b) { b.classList.remove('is-active'); });
         btn.classList.add('is-active');
-
-        catalogCards.forEach(function (card) {
-          var category = card.getAttribute('data-category');
-          if (filter === 'all' || category === filter) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
+        applyFilter(filter);
       });
     });
+
+    // Apply initial filter on page load
+    var activeBtn = document.querySelector('.catalog-filter.is-active');
+    if (activeBtn) {
+      applyFilter(activeBtn.getAttribute('data-filter'));
+    }
   }
 
 });
