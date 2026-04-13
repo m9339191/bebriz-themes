@@ -758,3 +758,19 @@ themes:
         a: "Fresh Morning works with all Shopify plans including Basic, Shopify, Advanced, and Shopify Plus."
       - q: "Do you offer refunds?"
         a: "We offer a 14-day money-back guarantee. If you're not satisfied, contact us for a full refund."
+
+  - handle: espresso
+    name: "Espresso"
+    tagline: "Dark Luxury Coffee Shopify theme with gold accents"
+    gumroad_url: "https://buy.stripe.com/00w3cw9HscOsd6k7VF4gg0k"
+    description: "A premium dark Shopify 2.0 theme for specialty coffee roasters and luxury cafes. Features dark near-black palette with gold accents, Cormorant Garamond serif typography, wave hero transitions, catalog-style collections, product carousels, and 50+ built-in features."
+    price: "$59"
+    price_note: "One-time payment"
+    category: coffee
+    demo_url: "https://fresh-morning-cafe.myshopify.com/?preview_theme_id=160745980123"
+    demo_password: "moon"
+    badges:
+      - "Shopify 2.0"
+      - "Responsive"
+      - "Dark Luxury"
+      - "Coffee Focused"
