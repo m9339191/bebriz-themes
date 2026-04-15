@@ -284,4 +284,91 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  // ===== Image Lightbox =====
+  var previewImages = document.querySelectorAll('.preview-card img');
+  if (previewImages.length > 0) {
+    var lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.setAttribute('aria-hidden', 'true');
+
+    var closeBtn = document.createElement('button');
+    closeBtn.className = 'lightbox__close';
+    closeBtn.setAttribute('aria-label', 'Close');
+    closeBtn.textContent = '\u00D7';
+    lightbox.appendChild(closeBtn);
+
+    var prevBtn = document.createElement('button');
+    prevBtn.className = 'lightbox__prev';
+    prevBtn.setAttribute('aria-label', 'Previous');
+    prevBtn.textContent = '\u2039';
+    lightbox.appendChild(prevBtn);
+
+    var nextBtn = document.createElement('button');
+    nextBtn.className = 'lightbox__next';
+    nextBtn.setAttribute('aria-label', 'Next');
+    nextBtn.textContent = '\u203A';
+    lightbox.appendChild(nextBtn);
+
+    var content = document.createElement('div');
+    content.className = 'lightbox__content';
+    var lightboxImg = document.createElement('img');
+    lightboxImg.className = 'lightbox__img';
+    lightboxImg.alt = '';
+    content.appendChild(lightboxImg);
+    var lightboxCaption = document.createElement('div');
+    lightboxCaption.className = 'lightbox__caption';
+    content.appendChild(lightboxCaption);
+    lightbox.appendChild(content);
+
+    document.body.appendChild(lightbox);
+
+    var currentIndex = 0;
+    var imageList = Array.prototype.slice.call(previewImages);
+
+    function openLightbox(index) {
+      currentIndex = index;
+      var img = imageList[index];
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt || '';
+      var card = img.closest('.preview-card');
+      var label = card ? card.querySelector('.preview-label') : null;
+      lightboxCaption.textContent = label ? label.textContent : '';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function showNext() {
+      openLightbox((currentIndex + 1) % imageList.length);
+    }
+
+    function showPrev() {
+      openLightbox((currentIndex - 1 + imageList.length) % imageList.length);
+    }
+
+    imageList.forEach(function (img, i) {
+      img.style.cursor = 'zoom-in';
+      img.addEventListener('click', function () { openLightbox(i); });
+    });
+
+    closeBtn.addEventListener('click', closeLightbox);
+    nextBtn.addEventListener('click', function (e) { e.stopPropagation(); showNext(); });
+    prevBtn.addEventListener('click', function (e) { e.stopPropagation(); showPrev(); });
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox || e.target === content) closeLightbox();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') showNext();
+      if (e.key === 'ArrowLeft') showPrev();
+    });
+  }
+
 });
