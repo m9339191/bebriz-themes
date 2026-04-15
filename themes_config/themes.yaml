@@ -759,6 +759,22 @@ themes:
       - q: "Do you offer refunds?"
         a: "We offer a 14-day money-back guarantee. If you're not satisfied, contact us for a full refund."
 
+  - handle: matcha
+    name: "Matcha"
+    tagline: "Organic Cafe Shopify theme with olive green accents"
+    gumroad_url: "https://buy.stripe.com/14A7sM9Hs4hW6HW3Fp4gg0l"
+    description: "A warm, organic Shopify 2.0 theme for matcha cafes, specialty coffee roasters, and artisan food brands. Features cream background with olive green accents, DM Serif Display typography, full-image collection cards, product carousels, and 50+ built-in features."
+    price: "$59"
+    price_note: "One-time payment"
+    category: coffee
+    demo_url: "https://macha-demo.myshopify.com/"
+    demo_password: "moon"
+    badges:
+      - "Shopify 2.0"
+      - "Responsive"
+      - "Organic Cafe"
+      - "Matcha Focused"
+
   - handle: espresso
     name: "Espresso"
     tagline: "Dark Luxury Coffee Shopify theme with gold accents"
