@@ -27,16 +27,38 @@
         return;
       }
 
-      // Create hidden form and auto-submit
+      // Parse store URL to separate base from query/path
+      // so we can build <origin>/password correctly even if store has ?preview_theme_id=...
+      var parsed;
+      try {
+        parsed = new URL(store);
+      } catch (e) {
+        window.location.href = store;
+        return;
+      }
+      var passwordUrl = parsed.origin + '/password';
+
+      // Create hidden form and auto-submit to password endpoint
       var form = document.createElement('form');
       form.method = 'POST';
-      form.action = store + '/password';
+      form.action = passwordUrl;
 
       var input = document.createElement('input');
       input.type = 'hidden';
       input.name = 'password';
       input.value = pw;
       form.appendChild(input);
+
+      // Shopify redirects to "/" by default after successful password submit.
+      // Use return_to to bring the visitor back to the full URL (with preview_theme_id).
+      var returnTo = parsed.pathname + parsed.search + parsed.hash;
+      if (returnTo && returnTo !== '/') {
+        var rt = document.createElement('input');
+        rt.type = 'hidden';
+        rt.name = 'return_to';
+        rt.value = returnTo;
+        form.appendChild(rt);
+      }
 
       document.body.appendChild(form);
       form.submit();

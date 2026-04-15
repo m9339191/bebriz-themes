@@ -783,7 +783,7 @@ themes:
     price: "$59"
     price_note: "One-time payment"
     category: coffee
-    demo_url: "https://fresh-morning-cafe.myshopify.com/?preview_theme_id=160745980123"
+    demo_url: "https://espresso-demos.myshopify.com/"
     demo_password: "moon"
     badges:
       - "Shopify 2.0"
