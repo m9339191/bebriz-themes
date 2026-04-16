@@ -2365,6 +2365,8 @@ ul, ol {
     left: 0;
     right: 0;
     bottom: 0;
+    height: calc(100vh - 72px);
+    height: calc(100dvh - 72px);
     background: #111113;
     border-top: 1px solid rgba(255,255,255,0.12);
     flex-direction: column;
@@ -2372,6 +2374,7 @@ ul, ol {
     gap: 0;
     z-index: 999;
     align-items: stretch;
+    overflow-y: auto;
   }
 
   .nav-links.open {
