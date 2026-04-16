@@ -4,7 +4,7 @@ themes:
     tagline: "Premium fashion & lifestyle Shopify theme"
     gumroad_url: "https://bebriz.gumroad.com/l/uffrnx"
     description: "A fully-featured Shopify theme with color swatches, AJAX cart, mega menu, wishlist, comparison, and 50+ built-in features designed for modern fashion stores."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: fashion
     demo_url: "https://moontemplate.myshopify.com/"
@@ -96,7 +96,7 @@ themes:
     tagline: "Pet & Wellness Shopify theme for modern pet brands"
     gumroad_url: "https://bebriz.gumroad.com/l/pdssn"
     description: "A premium Shopify theme designed for pet stores, pet wellness brands, and animal care businesses. Features include breed filters, subscription support, vet-approved badges, and 50+ built-in features."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: pet
     demo_url: "https://wellnesspet.myshopify.com/"
@@ -174,7 +174,7 @@ themes:
     tagline: "Supplements & Health Shopify theme for wellness brands"
     gumroad_url: "https://bebriz.gumroad.com/l/gedefj"
     description: "A premium Shopify theme designed for supplement stores, vitamin brands, and health products. Features include ingredient charts, dosage guides, stack builder, certification badges, and 50+ built-in features."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: supplements
     demo_url: "https://boostvita.myshopify.com/"
@@ -252,7 +252,7 @@ themes:
     tagline: "Coffee & Specialty Food Shopify theme for artisan brands"
     gumroad_url: "https://bebriz.gumroad.com/l/shzrzb"
     description: "A premium Shopify theme designed for coffee roasters, specialty food brands, and artisan beverage stores. Features include flavor profiles, roast level gauges, origin cards, brewing guides, and a magazine-style collection layout."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: coffee
     demo_url: "https://breuvn.myshopify.com/"
@@ -330,7 +330,7 @@ themes:
     tagline: "Digital Products Shopify theme for creators and marketplaces"
     gumroad_url: "https://bebriz.gumroad.com/l/nqopi"
     description: "A dark mode Shopify theme designed for selling digital products — templates, UI kits, icons, fonts, presets, and more. Features include file previews, license tiers, bundle builder, and a marketplace-style layout."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: digital
     demo_url: "https://martpixcel.myshopify.com/"
@@ -408,7 +408,7 @@ themes:
     tagline: "Kids & Baby Shopify theme for modern parents"
     gumroad_url: "https://bebriz.gumroad.com/l/jrznpk"
     description: "A playful pastel Shopify theme for baby stores, kids clothing, and toy shops. Features include age-based shopping, milestone cards, safety badges, size recommender, and fun bouncy animations."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: kids
     demo_url: "https://joylittle.myshopify.com/"
@@ -562,9 +562,9 @@ themes:
   - handle: caramel
     name: "Caramel"
     tagline: "Premium Coffee Shopify theme with warm artisan aesthetic"
-    gumroad_url: "https://buy.stripe.com/cNi6oI3j401G8Q41xh4gg0i"
+    gumroad_url: "https://buy.stripe.com/3cI7sM1aWeWA7M06RB4gg0n"
     description: "A warm, cream-and-brown Shopify 2.0 theme designed for specialty coffee roasters, cafes, and artisan food brands. Features include flavor wheel visualization, brewing guide tabs, high-converting product page, and 50+ built-in features with elegant Playfair Display typography."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: coffee
     demo_url: "https://caramel-demo.myshopify.com/"
@@ -662,9 +662,9 @@ themes:
   - handle: fresh-morning
     name: "Fresh Morning"
     tagline: "Minimalist Coffee Shopify theme for artisan roasters"
-    gumroad_url: "https://buy.stripe.com/14AfZi9HsdSwfes4Jt4gg0j"
+    gumroad_url: "https://buy.stripe.com/3cIeVe4n83dS3vK3Fp4gg0o"
     description: "A clean, minimalist Shopify 2.0 theme designed for specialty coffee roasters and cafes. Features warm earth-tone color palette, freshness-focused messaging, elegant typography, and 50+ built-in features. Perfect for brands that want to showcase quality beans with a refined aesthetic."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: coffee
     demo_url: "https://fresh-morning-cafe.myshopify.com/"
@@ -762,9 +762,9 @@ themes:
   - handle: matcha
     name: "Matcha"
     tagline: "Organic Cafe Shopify theme with olive green accents"
-    gumroad_url: "https://buy.stripe.com/14A7sM9Hs4hW6HW3Fp4gg0l"
+    gumroad_url: "https://buy.stripe.com/3cI9AU8Do3dS5DSdfZ4gg0q"
     description: "A warm, organic Shopify 2.0 theme for matcha cafes, specialty coffee roasters, and artisan food brands. Features cream background with olive green accents, DM Serif Display typography, full-image collection cards, product carousels, and 50+ built-in features."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: coffee
     demo_url: "https://macha-demo.myshopify.com/"
@@ -778,9 +778,9 @@ themes:
   - handle: pump
     name: "Pump"
     tagline: "Ultra-minimal white coffee Shopify theme with elegant typography"
-    gumroad_url: "https://buy.stripe.com/eVq8wQ06S6q43vK6RB4gg0m"
+    gumroad_url: "https://buy.stripe.com/fZucN6dXIdSw5DScbV4gg0r"
     description: "An ultra-clean white Shopify 2.0 theme for specialty coffee roasters and premium cafes. Features Playfair Display serif typography, scattered coffee imagery hero, Coffee Made Easy features section, Flavours product grid with circular price badges, and 50+ built-in features."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: coffee
     demo_url: "https://pump-demo.myshopify.com/"
@@ -794,9 +794,9 @@ themes:
   - handle: espresso
     name: "Espresso"
     tagline: "Dark Luxury Coffee Shopify theme with gold accents"
-    gumroad_url: "https://buy.stripe.com/00w3cw9HscOsd6k7VF4gg0k"
+    gumroad_url: "https://buy.stripe.com/9B6eVe6vg7u8giw0td4gg0p"
     description: "A premium dark Shopify 2.0 theme for specialty coffee roasters and luxury cafes. Features dark near-black palette with gold accents, Cormorant Garamond serif typography, wave hero transitions, catalog-style collections, product carousels, and 50+ built-in features."
-    price: "$59"
+    price: "$39"
     price_note: "One-time payment"
     category: coffee
     demo_url: "https://espresso-demos.myshopify.com/"
