@@ -44,8 +44,16 @@
   <section class="section" style="padding-top: 20px;">
     <div class="container">
 
-      <h2 class="docs-category-title">Coffee</h2>
-      <div class="docs-theme-grid">
+      <div class="docs-filter-bar">
+        <button class="docs-filter is-active" data-docs-filter="all">All</button>
+        <button class="docs-filter" data-docs-filter="coffee">Coffee</button>
+        <button class="docs-filter" data-docs-filter="fashion">Fashion</button>
+        <button class="docs-filter" data-docs-filter="health">Health</button>
+        <button class="docs-filter" data-docs-filter="other">Other</button>
+      </div>
+
+      <h2 class="docs-category-title" data-docs-category="coffee">Coffee</h2>
+      <div class="docs-theme-grid" data-docs-category="coffee">
         <a href="pump/index.html" class="docs-theme-card glass-card">
           <div class="docs-theme-card-img"><img src="../images/screenshot-pump-home.png" alt="Pump" loading="lazy"></div>
           <div class="docs-theme-card-body">
@@ -95,8 +103,8 @@
         </a>
       </div>
 
-      <h2 class="docs-category-title" style="margin-top: 60px;">Fashion &amp; Lifestyle</h2>
-      <div class="docs-theme-grid">
+      <h2 class="docs-category-title" style="margin-top: 60px;" data-docs-category="fashion">Fashion &amp; Lifestyle</h2>
+      <div class="docs-theme-grid" data-docs-category="fashion">
         <a href="luxe-fashion/index.html" class="docs-theme-card glass-card">
           <div class="docs-theme-card-body">
             <h3>Luxe Fashion</h3>
@@ -113,8 +121,8 @@
         </a>
       </div>
 
-      <h2 class="docs-category-title" style="margin-top: 60px;">Health &amp; Wellness</h2>
-      <div class="docs-theme-grid">
+      <h2 class="docs-category-title" style="margin-top: 60px;" data-docs-category="health">Health &amp; Wellness</h2>
+      <div class="docs-theme-grid" data-docs-category="health">
         <a href="pawsome/index.html" class="docs-theme-card glass-card">
           <div class="docs-theme-card-body">
             <h3>Pawsome</h3>
@@ -131,8 +139,8 @@
         </a>
       </div>
 
-      <h2 class="docs-category-title" style="margin-top: 60px;">Other Niches</h2>
-      <div class="docs-theme-grid">
+      <h2 class="docs-category-title" style="margin-top: 60px;" data-docs-category="other">Other</h2>
+      <div class="docs-theme-grid" data-docs-category="other">
         <a href="pixelmart/index.html" class="docs-theme-card glass-card">
           <div class="docs-theme-card-body">
             <h3>Pixelmart</h3>
@@ -176,7 +184,58 @@
     .docs-theme-card:hover .docs-theme-card-img img {
       transform: scale(1.03);
     }
+    .docs-filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .docs-filter {
+      padding: 8px 20px;
+      border: 1px solid var(--color-border-hover);
+      border-radius: 100px;
+      background: transparent;
+      color: var(--color-text-secondary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .docs-filter:hover {
+      border-color: var(--color-text);
+      color: var(--color-text);
+    }
+    .docs-filter.is-active {
+      background: var(--color-white);
+      color: var(--color-bg);
+      border-color: var(--color-white);
+    }
+    [data-docs-category].is-hidden {
+      display: none;
+    }
   </style>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var filters = document.querySelectorAll('[data-docs-filter]');
+    var categories = document.querySelectorAll('[data-docs-category]');
+    filters.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        filters.forEach(function(b) { b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        var f = btn.getAttribute('data-docs-filter');
+        categories.forEach(function(el) {
+          if (f === 'all' || el.getAttribute('data-docs-category') === f) {
+            el.classList.remove('is-hidden');
+          } else {
+            el.classList.add('is-hidden');
+          }
+        });
+      });
+    });
+  });
+  </script>
 
   <!-- Footer -->
   <footer class="site-footer">
