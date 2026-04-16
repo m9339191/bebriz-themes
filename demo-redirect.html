@@ -33,7 +33,11 @@
       try {
         parsed = new URL(store);
       } catch (e) {
-        window.location.href = store;
+        document.querySelector('.loader p').textContent = 'Invalid store URL.';
+        return;
+      }
+      if (!parsed.hostname.endsWith('.myshopify.com')) {
+        document.querySelector('.loader p').textContent = 'Invalid store domain.';
         return;
       }
       var passwordUrl = parsed.origin + '/password';
