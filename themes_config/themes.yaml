@@ -775,6 +775,22 @@ themes:
       - "Organic Cafe"
       - "Matcha Focused"
 
+  - handle: pump
+    name: "Pump"
+    tagline: "Ultra-minimal white coffee Shopify theme with elegant typography"
+    gumroad_url: "https://buy.stripe.com/eVq8wQ06S6q43vK6RB4gg0m"
+    description: "An ultra-clean white Shopify 2.0 theme for specialty coffee roasters and premium cafes. Features Playfair Display serif typography, scattered coffee imagery hero, Coffee Made Easy features section, Flavours product grid with circular price badges, and 50+ built-in features."
+    price: "$59"
+    price_note: "One-time payment"
+    category: coffee
+    demo_url: "https://pump-demo.myshopify.com/"
+    demo_password: "moon"
+    badges:
+      - "Shopify 2.0"
+      - "Responsive"
+      - "Minimalist White"
+      - "Coffee Focused"
+
   - handle: espresso
     name: "Espresso"
     tagline: "Dark Luxury Coffee Shopify theme with gold accents"
