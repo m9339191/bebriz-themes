@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roastery Documentation &mdash; beBriz</title>
+  <meta name="description" content="Complete documentation for the Roastery Shopify coffee theme by beBriz. Installation, setup, features, customization, and troubleshooting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo"><span>be</span>Briz</a>
+      <nav class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../themes/index.html">Themes</a>
+        <a href="../../docs/index.html" class="active">Documentation</a>
+        <a href="../../support/index.html">Support</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile sidebar toggle -->
+  <button class="docs-sidebar-toggle">Show Navigation</button>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-logo">
+        <a href="../../index.html" class="logo" style="font-size: 1.2rem;"><span>be</span>Briz</a>
+      </div>
+      <nav>
+        <h3>Documentation</h3>
+        <a href="#getting-started">Getting Started</a>
+        <a href="#theme-settings">Theme Settings</a>
+        <a href="#header-navigation">Header &amp; Navigation</a>
+        <a href="#hero-section">Hero Section</a>
+        <a href="#product-page">Product Page</a>
+        <a href="#collection-page">Collection Page</a>
+        <a href="#cart-drawer">Cart Drawer</a>
+        <a href="#coffee-features">Coffee Features</a>
+        <a href="#sticky-navigation">Sticky Navigation</a>
+        <a href="#license-activation">License &amp; Activation</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="docs-main">
+      <div class="docs-breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span>/</span>
+        <a href="../../docs/index.html">Docs</a>
+        <span>/</span>
+        Roastery
+      </div>
+
+      <div class="docs-content">
+        <h1>Roastery Documentation</h1>
+        <p>This comprehensive guide covers everything you need to install, configure, and customize the Roastery Shopify theme. Roastery is a modern, clean coffee theme built around mint and sage green tones with a minimal editorial aesthetic. Use the sidebar navigation to jump to a specific section, or scroll through for the complete reference.</p>
+
+        <!-- Getting Started -->
+        <h2 id="getting-started">Getting Started</h2>
+
+        <h3>System Requirements</h3>
+
+        <p>Roastery requires a Shopify store on any current plan (Basic Shopify, Shopify, Advanced, or Shopify Plus). The theme is built on Online Store 2.0 and requires no additional apps for core functionality.</p>
+
+        <h3>Installation</h3>
+
+        <p>After completing your purchase, you will receive a ZIP file containing the theme. Follow these steps to install it on your Shopify store:</p>
+
+        <ol>
+          <li>Log in to your <strong>Shopify admin panel</strong> at your-store.myshopify.com/admin.</li>
+          <li>Navigate to <strong>Online Store &gt; Themes</strong> in the left sidebar.</li>
+          <li>In the Theme library section, click the <strong>Add theme</strong> button.</li>
+          <li>Select <strong>Upload ZIP file</strong> from the dropdown menu.</li>
+          <li>Choose the downloaded ZIP file from your computer and wait for the upload to complete. This typically takes 15-30 seconds.</li>
+          <li>Once uploaded, the theme will appear in your theme library. Click <strong>Customize</strong> to open the visual theme editor, or click <strong>Actions &gt; Publish</strong> to make it your live theme immediately.</li>
+        </ol>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> We strongly recommend customizing the theme on an unpublished version first. Configure your colors, hero image, and sections before publishing. This ensures your live store never appears in an unfinished state to customers.</p>
+        </div>
+
+        <h3>Activating Roastery</h3>
+
+        <p>Once you have uploaded and customized the theme to your liking:</p>
+
+        <ol>
+          <li>Go to <strong>Online Store &gt; Themes</strong> in your Shopify admin.</li>
+          <li>Find Roastery in your theme library.</li>
+          <li>Click <strong>Actions &gt; Publish</strong>.</li>
+          <li>Confirm the activation in the dialog. Your previous theme will be moved to the theme library and can be restored at any time.</li>
+        </ol>
+
+        <h3>Using Shopify CLI</h3>
+
+        <p>If you prefer working with the command line, you can deploy the theme using Shopify CLI:</p>
+
+        <pre><code>shopify theme push --store your-store.myshopify.com</code></pre>
+
+        <p>This requires the Shopify CLI to be installed and authenticated with your store. Extract the ZIP file first, then run the command from the extracted directory. Refer to the official Shopify CLI documentation for setup instructions.</p>
+
+        <!-- Theme Settings -->
+        <h2 id="theme-settings">Theme Settings</h2>
+
+        <h3>Colors</h3>
+
+        <p>Roastery ships with a carefully curated mint and sage green palette centered around the primary accent <code>#5B8C6A</code>. You can fully customize every color without code changes. In the Shopify theme editor, navigate to <strong>Theme settings &gt; Colors</strong> to configure:</p>
+
+        <ul>
+          <li><strong>Primary color</strong> &mdash; The main sage green (#5B8C6A) used for buttons, links, badges, and accent elements. Change this to match your brand identity.</li>
+          <li><strong>Secondary color</strong> &mdash; Applied to secondary buttons, hover states, and supporting UI elements. Default is a lighter mint tone.</li>
+          <li><strong>Background color</strong> &mdash; The main background color for all pages. Default is a warm off-white for a clean, airy feel.</li>
+          <li><strong>Text color</strong> &mdash; Body text color. Default is a soft charcoal for comfortable reading.</li>
+          <li><strong>Header background &amp; text</strong> &mdash; Separate color controls for the centered logo header, navigation links, and mobile drawer.</li>
+          <li><strong>Footer background &amp; text</strong> &mdash; Independent footer color settings for background, headings, and link colors.</li>
+          <li><strong>Sale / Badge colors</strong> &mdash; Customize the appearance of sale badges, "New" tags, and "Sold out" indicators independently.</li>
+          <li><strong>Trust bar colors</strong> &mdash; Background and text colors for the scrolling trust ticker that appears below the header.</li>
+        </ul>
+
+        <h3>Typography</h3>
+
+        <p>Navigate to <strong>Theme settings &gt; Typography</strong> to select fonts for headings and body text. Roastery pairs a modern sans-serif heading font with a clean body font for readability. You can choose from the full Shopify-hosted font library or provide a custom font URL. The theme supports:</p>
+
+        <ul>
+          <li><strong>Heading font</strong> &mdash; Applied to all headings (h1 through h6), section titles, product names, and collection titles. The default is a geometric sans-serif for a fresh, modern look.</li>
+          <li><strong>Body font</strong> &mdash; Used for paragraphs, product descriptions, navigation links, form labels, and all general UI text.</li>
+          <li><strong>Font size scale</strong> &mdash; Adjust the base font size (default: 16px). All other sizes scale proportionally, so a single change updates the entire typographic hierarchy.</li>
+          <li><strong>Letter spacing</strong> &mdash; Fine-tune letter spacing for headings and body text independently. Wider spacing pairs well with the minimal aesthetic.</li>
+        </ul>
+
+        <h3>Layout</h3>
+
+        <p>Under <strong>Theme settings &gt; Layout</strong>, you can control the overall page structure and visual style:</p>
+
+        <ul>
+          <li><strong>Content width</strong> &mdash; Set the maximum width of the main content area. Default is 1200px. Wider values work well for image-heavy stores.</li>
+          <li><strong>Section spacing</strong> &mdash; Control vertical padding between sections (small, medium, or large). Affects all pages globally. Roastery defaults to generous spacing for a breathing, editorial feel.</li>
+          <li><strong>Border radius</strong> &mdash; Set the corner radius for buttons, cards, input fields, and image containers. Default is a subtle 4px for soft edges without being overly rounded.</li>
+          <li><strong>Enable animations</strong> &mdash; Toggle scroll-triggered fade and slide animations on or off globally. Disabling animations can improve performance on older devices.</li>
+          <li><strong>Card style</strong> &mdash; Choose between flat, elevated (subtle shadow), or outlined card styles for product cards and content blocks.</li>
+        </ul>
+
+        <!-- Header & Navigation -->
+        <h2 id="header-navigation">Header &amp; Navigation</h2>
+
+        <h3>Centered Logo Header</h3>
+
+        <p>Roastery uses a warm centered logo header layout by default. Your brand logo is positioned at the center of the header with navigation links split evenly on either side. This layout creates a balanced, sophisticated appearance ideal for specialty coffee and lifestyle brands.</p>
+
+        <p>Upload your brand logo in the header section settings. For best results, use a transparent PNG or SVG file. Recommended dimensions: height between 40px and 60px. The theme will scale the logo proportionally based on the max-width value you set.</p>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> For the centered layout, keep your menu to an even number of top-level items (4 or 6 recommended) so they split symmetrically around the logo.</p>
+        </div>
+
+        <h3>Sticky Behavior</h3>
+
+        <p>The header supports sticky behavior that keeps it visible as customers scroll down the page. When enabled, the header shrinks slightly and gains a subtle background blur as the user scrolls past the hero section. Configure sticky settings under <strong>Header section &gt; Sticky header</strong>:</p>
+
+        <ul>
+          <li><strong>Enable sticky header</strong> &mdash; Master toggle for the sticky behavior.</li>
+          <li><strong>Shrink on scroll</strong> &mdash; When enabled, the header reduces its height from 80px to 60px after scrolling. This preserves screen space while keeping navigation accessible.</li>
+          <li><strong>Background on scroll</strong> &mdash; Choose between solid white, frosted glass (background blur), or transparent. Frosted glass is the default and provides a modern layered effect.</li>
+          <li><strong>Show shadow on scroll</strong> &mdash; Adds a subtle bottom shadow to the header when scrolled to visually separate it from page content.</li>
+        </ul>
+
+        <h3>Navigation Menu</h3>
+
+        <p>Select which Shopify navigation menu to display in the header. Create and manage your menus in <strong>Shopify Admin &gt; Online Store &gt; Navigation</strong>. The theme supports up to two levels of dropdown nesting for the centered layout. Dropdowns appear as clean, minimal panels beneath the header with smooth fade-in animations.</p>
+
+        <h3>Mobile Drawer</h3>
+
+        <p>On screens below 768px, the header collapses into a hamburger icon that opens a slide-in drawer menu from the left side. The mobile drawer includes:</p>
+
+        <ul>
+          <li>Your logo at the top of the drawer for brand consistency</li>
+          <li>Full navigation with accordion-style expandable submenus</li>
+          <li>Search bar integrated at the top of the drawer</li>
+          <li>Account and cart icons in the drawer header</li>
+          <li>Social media links at the bottom of the drawer</li>
+        </ul>
+
+        <p>The drawer uses a smooth slide animation and dims the page content behind it with a semi-transparent overlay. Tapping the overlay or pressing the close button dismisses the drawer.</p>
+
+        <!-- Hero Section -->
+        <h2 id="hero-section">Hero Section</h2>
+
+        <h3>Centered-Minimal Variant</h3>
+
+        <p>Roastery uses the centered-minimal hero variant instead of a fullscreen slider. This hero style features a contained, centered composition with ample white space around the content. The result is a refined, editorial look that lets your imagery and messaging breathe.</p>
+
+        <p>In the theme editor, select the hero section on your homepage template. The centered-minimal variant supports:</p>
+
+        <ul>
+          <li><strong>Hero image</strong> &mdash; A single high-quality image displayed within a contained frame. Recommended size: 1400 x 700px. The image is displayed at a max-width of 1100px with rounded corners.</li>
+          <li><strong>Heading</strong> &mdash; Large centered text overlaid on or below the image. Supports two sizes: large (hero-scale) and medium (section-scale).</li>
+          <li><strong>Subheading</strong> &mdash; A supporting line of text below the heading with lighter weight and reduced opacity.</li>
+          <li><strong>Button</strong> &mdash; A single centered call-to-action button with customizable text, URL, and style (filled sage green or outline).</li>
+          <li><strong>Text position</strong> &mdash; Place the heading and subheading over the image (with overlay) or below the image in a separate text block.</li>
+          <li><strong>Overlay opacity</strong> &mdash; When text is positioned over the image, control the dark overlay from 0% to 60% for readability.</li>
+        </ul>
+
+        <h3>Image Fallback</h3>
+
+        <p>If no hero image is uploaded, the hero section gracefully falls back to a solid background color with your heading text centered on top. The fallback background color is configurable under the hero section settings. This ensures your homepage always looks intentional, even before you have added imagery.</p>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> For the centered-minimal style, use photographs with a clean subject and soft tones. Overhead coffee table shots, latte art close-ups, and minimalist product photography work especially well.</p>
+        </div>
+
+        <h3>Text Customization</h3>
+
+        <p>All hero text supports rich formatting options:</p>
+
+        <ul>
+          <li><strong>Font override</strong> &mdash; Use the global heading font or select a different font just for the hero heading.</li>
+          <li><strong>Text color</strong> &mdash; Override the default text color for the hero section independently.</li>
+          <li><strong>Text alignment</strong> &mdash; Center (default), left, or right alignment.</li>
+          <li><strong>Heading size</strong> &mdash; Choose from small, medium, large, or extra-large presets.</li>
+          <li><strong>Animation</strong> &mdash; Text can fade in, slide up, or appear without animation when the page loads.</li>
+        </ul>
+
+        <!-- Product Page -->
+        <h2 id="product-page">Product Page</h2>
+
+        <h3>Editorial Layout</h3>
+
+        <p>Roastery product pages use an editorial layout that presents product information in a storytelling format. Instead of a standard two-column grid, the layout alternates between image-focused and text-focused blocks as the customer scrolls down:</p>
+
+        <ul>
+          <li><strong>Top section</strong> &mdash; Large product image on the left with title, price, variant picker, and add-to-cart on the right.</li>
+          <li><strong>Story block</strong> &mdash; Full-width text section below the fold for long-form product storytelling.</li>
+          <li><strong>Image gallery</strong> &mdash; Additional product images displayed in a staggered two-column layout with parallax scroll effects.</li>
+          <li><strong>Details accordion</strong> &mdash; Collapsible sections for shipping, returns, ingredients, and custom content.</li>
+        </ul>
+
+        <h3>Flavor Profiles</h3>
+
+        <p>Each product can display tasting notes and flavor characteristics using a clean badge system integrated directly into the product page.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In <strong>Shopify Admin &gt; Products</strong>, add tags to your products using the format <code>flavor:Chocolate</code>, <code>flavor:Citrus</code>, <code>flavor:Caramel</code>, etc.</li>
+          <li>The theme reads tags prefixed with <code>flavor:</code> and renders them as styled pill badges near the product title.</li>
+          <li>Badge colors are automatically derived from a curated palette that matches the Roastery sage green aesthetic.</li>
+          <li>To override badge colors, go to <strong>Theme settings &gt; Coffee Features &gt; Flavor Badge Colors</strong>.</li>
+        </ol>
+
+        <h3>Variant Picker</h3>
+
+        <p>The product page supports multiple variant picker styles. In the product section settings, choose between:</p>
+
+        <ul>
+          <li><strong>Buttons</strong> &mdash; Minimal pill-style buttons with sage green active states. This is the default and best matches the Roastery aesthetic.</li>
+          <li><strong>Dropdown</strong> &mdash; Standard dropdown selectors for each option (Size, Grind, Roast, etc.).</li>
+          <li><strong>Color swatches</strong> &mdash; Visual color circles for blend or packaging color options.</li>
+        </ul>
+
+        <h3>Image Gallery</h3>
+
+        <p>The product page image gallery supports stacked, carousel, or thumbnail grid layouts. Images support pinch-to-zoom on mobile and click-to-zoom on desktop. The gallery automatically groups images by variant when variant-specific images are assigned.</p>
+
+        <!-- Collection Page -->
+        <h2 id="collection-page">Collection Page</h2>
+
+        <h3>Masonry 2-Column Grid</h3>
+
+        <p>Roastery uses a masonry-style 2-column grid for collection pages that creates visual variety by alternating between tall and standard card heights. This editorial approach makes browsing feel more like reading a curated magazine than scrolling a product catalog.</p>
+
+        <p><strong>Layout pattern:</strong></p>
+
+        <ul>
+          <li><strong>Column A</strong> &mdash; Tall cards with larger images and more vertical space for product titles and flavor badges.</li>
+          <li><strong>Column B</strong> &mdash; Standard cards offset vertically to create the masonry stagger effect.</li>
+          <li><strong>Feature cards</strong> &mdash; Every 5th product spans both columns as a horizontal feature card with a landscape image and extended description.</li>
+        </ul>
+
+        <p>To configure the masonry layout, go to <strong>Theme settings &gt; Collection Page &gt; Layout</strong> and select <strong>Masonry 2-Column</strong>. You can also switch to a standard 3-column or 4-column grid if you prefer a more conventional layout.</p>
+
+        <h3>Filters</h3>
+
+        <p>Collection pages include a sidebar filter panel powered by Shopify's native storefront filtering API. Filters are automatically generated based on your product data. Available filter types include:</p>
+
+        <ul>
+          <li><strong>Price range slider</strong> &mdash; Interactive dual-handle slider for min/max price filtering.</li>
+          <li><strong>Roast level</strong> &mdash; Filter by roast level when products use the <code>custom.roast_level</code> metafield.</li>
+          <li><strong>Origin</strong> &mdash; Filter by coffee origin region.</li>
+          <li><strong>Flavor tags</strong> &mdash; Filter by flavor profile tags (chocolate, fruity, nutty, etc.).</li>
+          <li><strong>Availability</strong> &mdash; Toggle between in-stock and out-of-stock products.</li>
+          <li><strong>Product type</strong> &mdash; Filter by product type (whole bean, ground, pods, equipment, etc.).</li>
+        </ul>
+
+        <p>To configure which filters appear, go to <strong>Shopify Admin &gt; Online Store &gt; Navigation &gt; Collection and search filters</strong>. The theme displays all filters you enable there, styled with the Roastery sage green accents.</p>
+
+        <h3>Sort Options</h3>
+
+        <p>A sort dropdown appears at the top of every collection page. Customers can sort products by: Featured (manual order), Best selling, Alphabetical (A-Z and Z-A), Price (low to high and high to low), and Date (newest and oldest). The selected sort preference updates the page URL for bookmarkable results.</p>
+
+        <!-- Cart Drawer -->
+        <h2 id="cart-drawer">Cart Drawer</h2>
+
+        <h3>AJAX Cart</h3>
+
+        <p>Roastery includes a fully AJAX-powered cart drawer that slides in from the right side of the screen when a customer adds a product. The entire add-to-cart and update process happens without any page reloads, providing a seamless shopping experience. To configure:</p>
+
+        <ol>
+          <li>In the theme editor, go to <strong>Theme settings &gt; Cart</strong>.</li>
+          <li>Set <strong>Cart type</strong> to <code>Drawer</code>. Alternatively, choose <code>Page</code> for a traditional full-page cart.</li>
+          <li>Enable <strong>Cart recommendations</strong> to show complementary products inside the cart drawer.</li>
+          <li>Enable <strong>Cart note</strong> to let customers add special instructions (e.g., grind preferences, gift messages).</li>
+          <li>Toggle <strong>Trust badges</strong> to display security and payment icons below the checkout button.</li>
+        </ol>
+
+        <h3>Free Shipping Bar</h3>
+
+        <p>The free shipping bar displays a progress indicator showing how much more the customer needs to spend to qualify for free shipping. It updates dynamically as items are added or removed, with a smooth animated fill effect in sage green.</p>
+
+        <ol>
+          <li>Navigate to <strong>Theme settings &gt; Cart &gt; Free shipping bar</strong>.</li>
+          <li>Enable the free shipping bar toggle.</li>
+          <li>Set the <strong>Free shipping threshold</strong> amount (e.g., $50, $75). This should match your actual shipping policy.</li>
+          <li>Customize the message text. Use the <code>{amount}</code> placeholder for the remaining amount. Example: "Add {amount} more for free shipping!"</li>
+          <li>When the threshold is reached, a celebration message appears with a checkmark animation.</li>
+        </ol>
+
+        <h3>Upsell Products</h3>
+
+        <p>The cart drawer can display upsell product recommendations below the cart items. These are pulled from Shopify's product recommendations API or from a manually curated collection. Customers can add upsell items directly from the cart drawer without leaving the page.</p>
+
+        <h3>Terms Checkbox</h3>
+
+        <p>Require customers to agree to your terms and conditions before proceeding to checkout. Enable this under <strong>Theme settings &gt; Cart &gt; Terms checkbox</strong>. Link the checkbox label text to your terms and conditions page. When enabled, the checkout button remains disabled until the checkbox is checked.</p>
+
+        <!-- Coffee Features -->
+        <h2 id="coffee-features">Coffee Features</h2>
+
+        <h3>Flavor Wheel</h3>
+
+        <p>The flavor wheel section displays visual intensity bars for flavor categories, helping customers understand the tasting profile of each coffee at a glance.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; Flavor Wheel</strong> on the product page template.</li>
+          <li>Click <strong>Add block</strong> for each flavor category.</li>
+          <li>For each flavor, set:</li>
+        </ol>
+
+        <ul>
+          <li><strong>Flavor Name</strong> &mdash; e.g., "Chocolate", "Nutty", "Citrus", "Floral"</li>
+          <li><strong>Intensity</strong> &mdash; A value from 1 to 5</li>
+          <li><strong>Color</strong> &mdash; Choose a color for the intensity bar. Defaults to shades within the sage green palette.</li>
+        </ul>
+
+        <p>Bars render horizontally with filled segments matching the intensity value. The Roastery flavor wheel uses soft rounded bars that complement the minimal aesthetic.</p>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Keep flavor entries to 4-6 categories for the cleanest visual. Use metafields if you want to set values per-product instead of per-template.</p>
+        </div>
+
+        <h3>Brewing Guide</h3>
+
+        <p>The brewing guide section displays step-by-step method cards with specifications for grind size, coffee-to-water ratio, water temperature, and brew time.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; Brewing Guide</strong>.</li>
+          <li>Click <strong>Add block</strong> to add a brewing method card.</li>
+          <li>For each method, configure:</li>
+        </ol>
+
+        <ul>
+          <li><strong>Method Name</strong> &mdash; e.g., "Pour Over", "French Press", "AeroPress", "Cold Brew"</li>
+          <li><strong>Icon</strong> &mdash; Choose from built-in brewing method icons or upload a custom SVG</li>
+          <li><strong>Grind Size</strong> &mdash; e.g., "Medium-Fine"</li>
+          <li><strong>Ratio</strong> &mdash; e.g., "1:16"</li>
+          <li><strong>Temperature</strong> &mdash; e.g., "200 F / 93 C"</li>
+          <li><strong>Brew Time</strong> &mdash; e.g., "3:30"</li>
+          <li><strong>Steps</strong> &mdash; Add numbered steps for the brewing process</li>
+        </ul>
+
+        <p>Each method renders as a clean card with rounded corners, a subtle sage green border, and a specs grid. The cards use a zigzag layout on desktop for visual variety.</p>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Add 3-4 brewing methods to give customers useful guidance without overwhelming the page.</p>
+        </div>
+
+        <h3>Trust Ticker</h3>
+
+        <p>The trust ticker is a continuously scrolling horizontal bar that displays trust signals, certifications, and key selling points. It appears below the header and scrolls automatically from right to left.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In the theme editor, select the <strong>Trust Ticker</strong> section (typically placed directly below the header or above the footer).</li>
+          <li>Click <strong>Add block</strong> to add ticker items. Each item supports:</li>
+        </ol>
+
+        <ul>
+          <li><strong>Text</strong> &mdash; The message to display, e.g., "Free Shipping Over $50", "Roasted Fresh Daily", "100% Arabica"</li>
+          <li><strong>Icon</strong> &mdash; Optional inline icon (checkmark, leaf, star, truck, etc.) displayed before the text</li>
+          <li><strong>Link</strong> &mdash; Optional URL to make the ticker item clickable</li>
+        </ul>
+
+        <p>The ticker automatically duplicates its content to create a seamless infinite scroll loop. Scrolling speed is configurable in the section settings (slow, medium, or fast). On hover, the ticker pauses so customers can read the content.</p>
+
+        <div class="callout">
+          <p><strong>Note:</strong> Add at least 4-5 ticker items to ensure the scrolling animation looks smooth and fills the full width of the screen without visible gaps.</p>
+        </div>
+
+        <h3>Zigzag Benefits Layout</h3>
+
+        <p>The benefits section uses a zigzag editorial layout that alternates image and text content on each row. Each row presents a key selling point with a large image on one side and a heading, description, and optional button on the other.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; Zigzag Benefits</strong>.</li>
+          <li>Click <strong>Add block</strong> for each benefit row.</li>
+          <li>For each block, configure:</li>
+        </ol>
+
+        <ul>
+          <li><strong>Image</strong> &mdash; A high-quality photo representing the benefit. Recommended: 800 x 600px.</li>
+          <li><strong>Heading</strong> &mdash; The benefit title, e.g., "Ethically Sourced", "Roasted to Order"</li>
+          <li><strong>Description</strong> &mdash; A paragraph explaining the benefit in detail.</li>
+          <li><strong>Button text &amp; URL</strong> &mdash; Optional CTA to learn more.</li>
+        </ul>
+
+        <p>Rows automatically alternate: the first row shows the image on the left and text on the right, the second row reverses, and so on. On mobile, all rows stack vertically with the image on top.</p>
+
+        <h3>Testimonials &mdash; Large Single Quotes</h3>
+
+        <p>Roastery displays customer testimonials as large single-quote blocks rather than a carousel of small cards. Each testimonial takes up significant vertical space with oversized quotation marks, the review text in a large serif font, and the customer name below.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; Testimonials</strong>.</li>
+          <li>Click <strong>Add block</strong> for each testimonial.</li>
+          <li>For each block, configure:</li>
+        </ol>
+
+        <ul>
+          <li><strong>Quote text</strong> &mdash; The customer review or testimonial text.</li>
+          <li><strong>Customer name</strong> &mdash; Attribution name.</li>
+          <li><strong>Customer title</strong> &mdash; Optional subtitle, e.g., "Verified Buyer" or "Subscriber since 2024".</li>
+          <li><strong>Star rating</strong> &mdash; Display 1-5 stars above the quote (optional).</li>
+        </ul>
+
+        <p>Testimonials display one at a time in a vertical stack on the homepage. On desktop, each quote block is centered with generous padding and a decorative oversized opening quotation mark in sage green. Navigation between testimonials uses a simple fade transition triggered by scroll or dot indicators.</p>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Curate 3-5 of your strongest testimonials. The large single-quote format gives each review maximum impact, so quality matters more than quantity here.</p>
+        </div>
+
+        <h3>Newsletter &mdash; Split Layout with Social Proof</h3>
+
+        <p>The newsletter section uses a split layout: one half contains the signup form with heading, description, and email input, while the other half displays social proof metrics such as subscriber count, average rating, and trust badges.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; Newsletter</strong>.</li>
+          <li>Configure the left panel (signup form):</li>
+        </ol>
+
+        <ul>
+          <li><strong>Heading</strong> &mdash; e.g., "Join the Morning Club"</li>
+          <li><strong>Description</strong> &mdash; Supporting text explaining the value of subscribing.</li>
+          <li><strong>Discount code</strong> &mdash; Optionally display a code after successful submission.</li>
+          <li><strong>Form integration</strong> &mdash; Integrates with Shopify customer list by default. Can connect to Klaviyo, Mailchimp, or other platforms via their Shopify app.</li>
+        </ul>
+
+        <p>Configure the right panel (social proof):</p>
+
+        <ul>
+          <li><strong>Subscriber count</strong> &mdash; Display a number like "12,000+ coffee lovers" to build credibility.</li>
+          <li><strong>Average rating</strong> &mdash; Show your store's average review score.</li>
+          <li><strong>Trust icons</strong> &mdash; Add certification or payment security badges.</li>
+          <li><strong>Background image</strong> &mdash; Optional lifestyle image behind the social proof panel.</li>
+        </ul>
+
+        <h3>Featured Collection &mdash; Masonry 2-Column</h3>
+
+        <p>The homepage featured collection section uses the same masonry 2-column layout as the collection page, displaying a curated selection of products in an editorial grid.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>In the theme editor, click <strong>Add section &gt; Featured Collection</strong>.</li>
+          <li>Select the collection to feature from the dropdown.</li>
+          <li>Set the number of products to display (4, 6, 8, or 10).</li>
+          <li>Choose whether to show the "View all" button linking to the full collection page.</li>
+        </ol>
+
+        <p>The masonry layout automatically assigns tall and standard card heights to create visual variety. The first product in the selection receives a larger card size for emphasis.</p>
+
+        <h3>Freshness Counter</h3>
+
+        <p>The freshness counter displays the number of days since the coffee was roasted, helping customers gauge freshness at a glance.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>Create a <strong>product metafield</strong> with the namespace and key <code>custom.roast_date</code>.</li>
+          <li>Set the metafield type to <strong>Date</strong>.</li>
+          <li>Enter the roast date for each product.</li>
+          <li>The counter calculates the days since roasting in real time and displays a badge on the product page.</li>
+        </ol>
+
+        <p><strong>Display logic:</strong></p>
+
+        <ul>
+          <li><strong>0-7 days:</strong> "Freshly Roasted" with a green badge</li>
+          <li><strong>8-21 days:</strong> Shows the day count with a neutral badge</li>
+          <li><strong>22+ days:</strong> Shows the day count with a subtle muted style</li>
+        </ul>
+
+        <h3>Origin Card</h3>
+
+        <p>The origin card displays the coffee's sourcing information in a clean card on the product page.</p>
+
+        <p><strong>Setup:</strong></p>
+
+        <ol>
+          <li>Create the following <strong>product metafields</strong> in Shopify Admin:</li>
+        </ol>
+
+        <ul>
+          <li><code>custom.origin_region</code> (Single line text) &mdash; e.g., "Yirgacheffe, Ethiopia"</li>
+          <li><code>custom.origin_altitude</code> (Single line text) &mdash; e.g., "1,900 - 2,200 masl"</li>
+          <li><code>custom.origin_process</code> (Single line text) &mdash; e.g., "Natural"</li>
+          <li><code>custom.origin_variety</code> (Single line text) &mdash; e.g., "Heirloom"</li>
+        </ul>
+
+        <p>The origin card automatically appears on the product page when at least one origin metafield has a value. In Roastery, the card uses a clean white background with sage green accents and subtle iconography for each data point.</p>
+
+        <!-- Sticky Navigation -->
+        <h2 id="sticky-navigation">Sticky Navigation</h2>
+
+        <h3>How It Works</h3>
+
+        <p>Roastery includes a dedicated sticky navigation bar that is always visible as the customer scrolls. This is separate from the main header sticky behavior and provides persistent access to key navigation elements.</p>
+
+        <p>The sticky navigation bar appears at the top of the viewport once the customer scrolls past the main header. It contains a compact version of your primary navigation, the cart icon with item count, and an optional search icon. The bar is thinner than the main header (48px height) to minimize content obstruction.</p>
+
+        <h3>Transparent vs Solid Mode</h3>
+
+        <p>The sticky navigation supports two visual modes that you can configure under <strong>Theme settings &gt; Sticky Navigation</strong>:</p>
+
+        <ul>
+          <li><strong>Solid mode</strong> &mdash; The sticky bar has a solid white (or custom color) background at all times. This provides maximum contrast and readability against any page content. Best for stores with busy or colorful imagery.</li>
+          <li><strong>Transparent mode</strong> &mdash; The sticky bar starts with a transparent background when overlaying the hero section and transitions to a solid background once the customer scrolls past the hero. This creates a seamless visual integration with the hero image. Navigation links switch from white (over hero) to dark (over content) automatically.</li>
+        </ul>
+
+        <h3>Configuration</h3>
+
+        <p>Navigate to <strong>Theme settings &gt; Sticky Navigation</strong> to configure:</p>
+
+        <ul>
+          <li><strong>Enable sticky navigation</strong> &mdash; Master toggle. When disabled, only the main header is shown.</li>
+          <li><strong>Mode</strong> &mdash; Solid or transparent (as described above).</li>
+          <li><strong>Background color</strong> &mdash; The solid background color for the sticky bar. Default matches your header background.</li>
+          <li><strong>Text color</strong> &mdash; Navigation link color in the sticky bar.</li>
+          <li><strong>Show logo</strong> &mdash; Toggle whether a small version of your logo appears in the sticky bar.</li>
+          <li><strong>Show search</strong> &mdash; Toggle the search icon in the sticky bar.</li>
+          <li><strong>Show cart count</strong> &mdash; Display the number of items in the cart next to the cart icon.</li>
+          <li><strong>Transition speed</strong> &mdash; Control how quickly the sticky bar appears and disappears (fast, medium, slow).</li>
+        </ul>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Use transparent mode if your hero section has a strong visual that you want to preserve without interruption. Switch to solid mode if your hero uses light colors that would make white navigation text hard to read.</p>
+        </div>
+
+        <div class="callout">
+          <p><strong>Note:</strong> The sticky navigation and the main header sticky behavior are independent features. You can enable both (the sticky nav replaces the header on scroll), enable only one, or disable both. When both are enabled, the sticky navigation takes priority once the user scrolls past the header.</p>
+        </div>
+
+        <!-- License & Activation -->
+        <h2 id="license-activation">License &amp; Activation</h2>
+
+        <h3>License Terms</h3>
+
+        <p>Each Roastery purchase grants you a single-store license. This means you may install and use the theme on:</p>
+
+        <ul>
+          <li>One (1) live production Shopify store</li>
+          <li>One (1) development or staging store for testing purposes</li>
+        </ul>
+
+        <p>Using the theme on additional production stores requires purchasing additional licenses. Contact our support team for multi-license pricing.</p>
+
+        <h3>Entering Your License Key</h3>
+
+        <p>After purchasing the theme, you will receive a license key via email. To activate:</p>
+
+        <ol>
+          <li>Install the theme on your Shopify store following the installation steps above.</li>
+          <li>Open the theme editor and navigate to <strong>Theme settings &gt; License</strong>.</li>
+          <li>Enter your license key in the <strong>License key</strong> field.</li>
+          <li>Click <strong>Save</strong>. The theme will verify your license against our server and activate all premium features.</li>
+        </ol>
+
+        <h3>Removing the Watermark</h3>
+
+        <p>The unlicensed version of Roastery displays a small "Theme by beBriz" watermark in the footer and a periodic toast notification reminding you to activate. Once you enter a valid license key:</p>
+
+        <ul>
+          <li>The footer watermark is automatically removed.</li>
+          <li>Toast notifications stop appearing.</li>
+          <li>All premium sections and features become fully functional.</li>
+          <li>Future theme updates are unlocked for your store.</li>
+        </ul>
+
+        <div class="callout">
+          <p><strong>Note:</strong> The watermark removal takes effect immediately after saving your license key. If you still see the watermark after activation, clear your browser cache or open your store in an incognito window to verify.</p>
+        </div>
+
+        <h3>Domain Verification</h3>
+
+        <p>Your license is tied to a single Shopify store domain. During activation, the theme records your store's <code>.myshopify.com</code> domain as the authorized installation. This is a one-time process. If you need to transfer the theme to a different store or change your store domain, contact our support team with your license key and the new domain to update the verification record.</p>
+
+        <div class="callout">
+          <p><strong>Note:</strong> Each license allows installation on one production store and one development/staging store. The development store must use a <code>.myshopify.com</code> domain (not a custom domain) to be recognized as a development installation. Contact support if you encounter any activation issues.</p>
+        </div>
+
+        <h3>Need Help?</h3>
+
+        <p>If you cannot find the answer to your question in this documentation, visit our <a href="../../support/index.html">support page</a> to contact our team directly. We typically respond within 24 hours on business days.</p>
+
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo"><span>be</span>Briz</a>
+          <p>Premium Shopify themes for modern e-commerce. Designed and developed with an obsession for quality, performance, and detail.</p>
+          <div class="footer-tagline">Powered by beBriz</div>
+        </div>
+        <div class="footer-col">
+          <h4>Themes</h4>
+          <a href="../../themes/luxe-fashion/index.html">Luxe Fashion</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="../../docs/index.html">Documentation</a>
+          <a href="../../support/index.html">Support</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Dribbble">Dr</a>
+          </div>
+          <a href="../../support/index.html#contact" style="margin-top: 12px;">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 beBriz. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -791,6 +791,22 @@ themes:
       - "Minimalist White"
       - "Coffee Focused"
 
+  - handle: roastery
+    name: "Roastery"
+    tagline: "Dark brand storytelling coffee theme with green accents"
+    gumroad_url: "https://buy.stripe.com/9B600k1aW4hWaYcgsb4gg0s"
+    description: "A dark Shopify 2.0 brand storytelling theme for coffee roasters. Dark/light alternating sections, transparent header, curved transitions, overlapping cards."
+    price: "$39"
+    price_note: "One-time payment"
+    category: coffee
+    demo_url: "https://roastary-demo.myshopify.com/"
+    demo_password: "moon"
+    badges:
+      - "Shopify 2.0"
+      - "Responsive"
+      - "Dark Brand"
+      - "Coffee Focused"
+
   - handle: espresso
     name: "Espresso"
     tagline: "Dark Luxury Coffee Shopify theme with gold accents"
