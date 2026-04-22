@@ -807,6 +807,22 @@ themes:
       - "Dark Brand"
       - "Coffee Focused"
 
+  - handle: brewmark
+    name: "Brewmark"
+    tagline: "Vintage paper-texture coffee theme with dashed borders"
+    gumroad_url: "https://buy.stripe.com/eVq28saLwcOs4zOgsb4gg0t"
+    description: "A vintage Shopify 2.0 theme for craft coffee shops. Paper texture background, dashed border cards, Playfair Display + DM Mono typography, CSS coffee bean decorations."
+    price: "$39"
+    price_note: "One-time payment"
+    category: coffee
+    demo_url: "https://brewmark-demo.myshopify.com/"
+    demo_password: "moon"
+    badges:
+      - "Shopify 2.0"
+      - "Responsive"
+      - "Vintage Paper"
+      - "Coffee Focused"
+
   - handle: espresso
     name: "Espresso"
     tagline: "Dark Luxury Coffee Shopify theme with gold accents"

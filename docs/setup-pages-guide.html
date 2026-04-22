@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Set Up Pages — beBriz Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo"><span>be</span>Briz</a>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../themes/index.html">Themes</a>
+        <a href="index.html" class="active">Documentation</a>
+        <a href="../support/index.html">Support</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" style="padding: 120px 0 40px;">
+    <div class="container">
+      <div class="hero-content">
+        <h1><span class="gradient-text">Setting Up Pages</span></h1>
+        <p>How to add About Us, Contact, FAQ, and Blog pages to your theme</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 20px;">
+    <div class="container" style="max-width: 800px;">
+
+      <div style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; padding: 32px; margin-bottom: 48px;">
+        <h3 style="margin-top: 0; color: var(--color-text);">Applies to all beBriz themes</h3>
+        <p style="color: var(--color-text-secondary); margin-bottom: 0;">Brewmark, Pump, Matcha, Espresso, Caramel, Roastery, and all other themes include custom page templates for About Us, Contact, and FAQ. Follow these steps to activate them.</p>
+      </div>
+
+      <h2 style="color: var(--color-text); margin-bottom: 24px;">1. Create the About Us Page</h2>
+
+      <div style="margin-bottom: 40px;">
+        <h4 style="color: var(--color-white);">Step 1: Add a new page</h4>
+        <ol style="color: var(--color-text-secondary); line-height: 2;">
+          <li>Go to your Shopify Admin</li>
+          <li>Navigate to <strong>Sales channels &rarr; Online Store &rarr; Pages</strong></li>
+          <li>Click <strong>"Add page"</strong></li>
+          <li>Title: <strong>About Us</strong></li>
+          <li>In the right sidebar, find <strong>"Theme template"</strong></li>
+          <li>Select <strong>page.about</strong> from the dropdown</li>
+          <li>Set Visibility to <strong>"Visible"</strong></li>
+          <li>Click <strong>Save</strong></li>
+        </ol>
+      </div>
+
+      <div style="margin-bottom: 40px;">
+        <h4 style="color: var(--color-white);">Step 2: Add to the navigation menu</h4>
+        <ol style="color: var(--color-text-secondary); line-height: 2;">
+          <li>Go to <strong>Online Store &rarr; Navigation</strong></li>
+          <li>Click on <strong>"Main menu"</strong></li>
+          <li>Click <strong>"Add menu item"</strong></li>
+          <li>Name: <strong>About Us</strong></li>
+          <li>Link: Click <strong>"Pages"</strong> &rarr; select <strong>"About Us"</strong></li>
+          <li>Click <strong>Save menu</strong></li>
+        </ol>
+      </div>
+
+      <div style="background: rgba(99,102,241,0.08); border: 1px solid rgba(99,102,241,0.2); border-radius: 8px; padding: 20px; margin-bottom: 48px;">
+        <strong style="color: #6366F1;">Tip:</strong>
+        <span style="color: var(--color-text-secondary);"> You can customize the About Us content in the Theme Editor: <strong>Online Store &rarr; Themes &rarr; Customize &rarr; Pages &rarr; About Us</strong>. Edit headings, text, team members, and images directly.</span>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 48px 0;">
+
+      <h2 style="color: var(--color-text); margin-bottom: 24px;">2. Create the Contact Page</h2>
+
+      <div style="margin-bottom: 40px;">
+        <ol style="color: var(--color-text-secondary); line-height: 2;">
+          <li>Go to <strong>Sales channels &rarr; Online Store &rarr; Pages</strong></li>
+          <li>Click <strong>"Add page"</strong></li>
+          <li>Title: <strong>Contact</strong></li>
+          <li>Theme template: Select <strong>page.contact</strong></li>
+          <li>Set Visibility to <strong>"Visible"</strong></li>
+          <li>Click <strong>Save</strong></li>
+          <li>Add to Main menu (same steps as above)</li>
+        </ol>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 48px 0;">
+
+      <h2 style="color: var(--color-text); margin-bottom: 24px;">3. Create the FAQ Page</h2>
+
+      <div style="margin-bottom: 40px;">
+        <ol style="color: var(--color-text-secondary); line-height: 2;">
+          <li>Go to <strong>Sales channels &rarr; Online Store &rarr; Pages</strong></li>
+          <li>Click <strong>"Add page"</strong></li>
+          <li>Title: <strong>FAQ</strong></li>
+          <li>Theme template: Select <strong>page.faq</strong></li>
+          <li>Set Visibility to <strong>"Visible"</strong></li>
+          <li>Click <strong>Save</strong></li>
+          <li>Add to Main menu or Footer menu</li>
+        </ol>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 48px 0;">
+
+      <h2 style="color: var(--color-text); margin-bottom: 24px;">4. Set Up the Blog (Journal)</h2>
+
+      <div style="margin-bottom: 40px;">
+        <h4 style="color: var(--color-white);">Step 1: Create a blog</h4>
+        <ol style="color: var(--color-text-secondary); line-height: 2;">
+          <li>Go to <strong>Sales channels &rarr; Online Store &rarr; Blog posts</strong></li>
+          <li>Click <strong>"Add blog post"</strong></li>
+          <li>Write your first post (title, content, featured image)</li>
+          <li>In the right sidebar under <strong>"Blog"</strong>, select or create <strong>"Journal"</strong></li>
+          <li>Set Visibility to <strong>"Visible"</strong></li>
+          <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h4 style="color: var(--color-white); margin-top: 24px;">Step 2: Add to navigation</h4>
+        <ol style="color: var(--color-text-secondary); line-height: 2;">
+          <li>Go to <strong>Online Store &rarr; Navigation &rarr; Main menu</strong></li>
+          <li>Click <strong>"Add menu item"</strong></li>
+          <li>Name: <strong>Journal</strong> (or Blog)</li>
+          <li>Link: Click <strong>"Blogs"</strong> &rarr; select <strong>"Journal"</strong></li>
+          <li>Click <strong>Save menu</strong></li>
+        </ol>
+      </div>
+
+      <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 48px 0;">
+
+      <h2 style="color: var(--color-text); margin-bottom: 24px;">5. Enter Your License Key</h2>
+
+      <div style="margin-bottom: 40px;">
+        <ol style="color: var(--color-text-secondary); line-height: 2;">
+          <li>Go to <strong>Online Store &rarr; Themes &rarr; Customize</strong></li>
+          <li>Click <strong>"Theme settings"</strong> (gear icon at bottom left)</li>
+          <li>Find the <strong>"License"</strong> section</li>
+          <li>Paste your license key (from your purchase confirmation email)</li>
+          <li>Click <strong>Save</strong></li>
+          <li>The "Theme by beBriz" watermark will be removed</li>
+        </ol>
+      </div>
+
+      <div style="background: rgba(34,197,94,0.08); border: 1px solid rgba(34,197,94,0.2); border-radius: 8px; padding: 20px; margin-bottom: 48px;">
+        <strong style="color: #22C55E;">Need help?</strong>
+        <span style="color: var(--color-text-secondary);"> Contact us at <a href="mailto:support@bebriz.com" style="color: #6366F1;">support@bebriz.com</a> — we respond within 24 hours. We also offer free installation for all theme purchases.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo"><span>be</span>Briz</a>
+          <p>Premium Shopify themes for modern e-commerce.</p>
+          <div class="footer-tagline">Powered by beBriz</div>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="index.html">Documentation</a>
+          <a href="../support/index.html">Support</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 beBriz. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
