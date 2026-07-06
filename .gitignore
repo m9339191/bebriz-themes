@@ -1,1 +1,11 @@
 admin/
+
+# Shopify theme source (sellable product - do NOT publish to public repo)
+themes/volt/assets/
+themes/volt/config/
+themes/volt/layout/
+themes/volt/locales/
+themes/volt/sections/
+themes/volt/snippets/
+themes/volt/templates/
+volt-theme.zip
