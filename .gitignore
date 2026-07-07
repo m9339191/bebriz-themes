@@ -1,12 +1,8 @@
 admin/
 
 # Shopify theme source (sellable product - do NOT publish to public repo)
-themes/volt/assets/
-themes/volt/config/
-themes/volt/layout/
-themes/volt/locales/
-themes/volt/sections/
-themes/volt/snippets/
-themes/volt/templates/
+# themes/volt has its own standalone git repo for version control.
+# When a volt sales page is added later, un-ignore it with: !themes/volt/index.html
+themes/volt/
 volt-theme.zip
 volt-theme-*.zip
