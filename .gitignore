@@ -9,3 +9,8 @@ themes/volt/*
 volt-theme.zip
 volt-theme-*.zip
 .gstack/
+
+# Local working files (not site content)
+Gemini_Generated_Image_*.png
+screenshot.png
+volt-demo-products.csv
