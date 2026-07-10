@@ -2,7 +2,10 @@ admin/
 
 # Shopify theme source (sellable product - do NOT publish to public repo)
 # themes/volt has its own standalone git repo for version control.
-# When a volt sales page is added later, un-ignore it with: !themes/volt/index.html
-themes/volt/
+# The sales page (index.html) is hand-maintained here and tracked; everything
+# else in themes/volt/ (the theme source files) stays excluded.
+themes/volt/*
+!themes/volt/index.html
 volt-theme.zip
 volt-theme-*.zip
+.gstack/
