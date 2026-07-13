@@ -8,9 +8,17 @@ themes/volt/*
 !themes/volt/index.html
 volt-theme.zip
 volt-theme-*.zip
+
+# themes/meowhaus has its own standalone git repo for version control.
+# The sales page (index.html) is hand-maintained here and tracked; everything
+# else in themes/meowhaus/ (the theme source files) stays excluded.
+themes/meowhaus/*
+!themes/meowhaus/index.html
+meowhaus-theme-*.zip
 .gstack/
 
 # Local working files (not site content)
 Gemini_Generated_Image_*.png
 screenshot.png
 volt-demo-products.csv
+volt-theme/
