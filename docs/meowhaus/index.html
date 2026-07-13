@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meowhaus Documentation &mdash; beBriz</title>
+  <meta name="description" content="Complete documentation for the Meowhaus Shopify pet theme by beBriz. Installation, theme settings, hero banner, Explore Categories, Lookbook, product page, and troubleshooting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../../index.html" class="logo"><span>be</span>Briz</a>
+      <nav class="nav-links">
+        <a href="../../index.html">Home</a>
+        <a href="../../themes/index.html">Themes</a>
+        <a href="../../docs/index.html" class="active">Documentation</a>
+        <a href="../../support/index.html">Support</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile sidebar toggle -->
+  <button class="docs-sidebar-toggle">Show Navigation</button>
+
+  <!-- Docs Layout -->
+  <div class="docs-layout">
+
+    <!-- Sidebar -->
+    <aside class="docs-sidebar">
+      <div class="sidebar-logo">
+        <a href="../../index.html" class="logo" style="font-size: 1.2rem;"><span>be</span>Briz</a>
+      </div>
+      <nav>
+        <h3>Documentation</h3>
+        <a href="#getting-started">Getting Started</a>
+        <a href="#theme-settings">Theme Settings</a>
+        <a href="#header-navigation">Header &amp; Navigation</a>
+        <a href="#hero-banner">Hero Banner</a>
+        <a href="#explore-categories">Explore Categories</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#fan-favorites">Fan Favorites</a>
+        <a href="#star-ratings">Star Ratings</a>
+        <a href="#product-page">Product Page</a>
+        <a href="#collection-page">Collection Page</a>
+        <a href="#cart">Cart</a>
+        <a href="#customer-accounts">Customer Accounts &amp; Gift Card</a>
+        <a href="#license-activation">License &amp; Activation</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="docs-main">
+      <div class="docs-breadcrumb">
+        <a href="../../index.html">Home</a>
+        <span>/</span>
+        <a href="../../docs/index.html">Docs</a>
+        <span>/</span>
+        Meowhaus
+      </div>
+
+      <div class="docs-content">
+        <h1>Meowhaus Documentation</h1>
+        <p>This comprehensive guide covers everything you need to install, configure, and customize the Meowhaus Shopify theme. Meowhaus is a warm, organic Shopify OS 2.0 theme for cat furniture and pet boutiques, built around a cream and sage base, elegant serif headlines, rounded pill design, circular category medallions, a shop-the-look Lookbook, and five bundled hero photos. No apps are required for any of the features described below. Use the sidebar navigation to jump to a specific section, or scroll through for the complete reference.</p>
+
+        <!-- Getting Started -->
+        <h2 id="getting-started">Getting Started</h2>
+
+        <h3>System Requirements</h3>
+
+        <p>Meowhaus requires a Shopify store on any current plan (Basic Shopify, Shopify, Advanced, or Shopify Plus). The theme is built on Online Store 2.0 and requires no additional apps for core functionality.</p>
+
+        <h3>Installation</h3>
+
+        <p>After completing your purchase, you will receive a ZIP file named <code>meowhaus-theme-1.0.0.zip</code>. Follow these steps to install it on your Shopify store:</p>
+
+        <ol>
+          <li>Log in to your <strong>Shopify admin panel</strong> at your-store.myshopify.com/admin.</li>
+          <li>Navigate to <strong>Online Store &gt; Themes</strong> in the left sidebar.</li>
+          <li>In the Theme library section, click the <strong>Add theme</strong> button.</li>
+          <li>Select <strong>Upload ZIP file</strong> from the dropdown menu.</li>
+          <li>Choose <code>meowhaus-theme-1.0.0.zip</code> from your computer and wait for the upload to complete. This typically takes 15-30 seconds.</li>
+          <li>Once uploaded, the theme will appear in your theme library. Click <strong>Customize</strong> to open the visual theme editor, or click <strong>Actions &gt; Publish</strong> to make it your live theme immediately.</li>
+        </ol>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> We strongly recommend customizing the theme on an unpublished version first. Configure your colors, hero banner, and Explore Categories medallions before publishing so your live store never appears in an unfinished state to customers.</p>
+        </div>
+
+        <h3>Activating Meowhaus</h3>
+
+        <p>Once you have uploaded and customized the theme to your liking:</p>
+
+        <ol>
+          <li>Go to <strong>Online Store &gt; Themes</strong> in your Shopify admin.</li>
+          <li>Find Meowhaus in your theme library.</li>
+          <li>Click <strong>Actions &gt; Publish</strong>.</li>
+          <li>Confirm the activation in the dialog. Your previous theme will be moved to the theme library and can be restored at any time.</li>
+        </ol>
+
+        <!-- Theme Settings -->
+        <h2 id="theme-settings">Theme Settings</h2>
+
+        <h3>Colors</h3>
+
+        <p>Meowhaus ships with a warm, organic palette built around a cream base. In the Shopify theme editor, navigate to <strong>Theme settings &gt; Colors</strong> to configure:</p>
+
+        <ul>
+          <li><strong>Background</strong> &mdash; The main cream background used across the storefront.</li>
+          <li><strong>Text</strong> &mdash; The default text color used against the cream background.</li>
+          <li><strong>Accent 1 (Sage)</strong> &mdash; The sage green accent used for buttons, medallions, and highlights.</li>
+          <li><strong>Accent 2 (Oak)</strong> &mdash; The warm oak accent used for secondary buttons and emphasis.</li>
+          <li><strong>Accent 3 (Clay)</strong> &mdash; The clay accent used for badges and tertiary highlights.</li>
+          <li><strong>Light text</strong> &mdash; Text color used on dark or accent-colored surfaces for contrast.</li>
+          <li><strong>Dark text</strong> &mdash; Text color used on light-background surfaces for contrast.</li>
+        </ul>
+
+        <h3>Typography</h3>
+
+        <p>Navigate to <strong>Theme settings &gt; Typography</strong> to select fonts. Meowhaus pairs an elegant serif heading font with clean sentence-case body text:</p>
+
+        <ul>
+          <li><strong>Heading font</strong> &mdash; Font picker applied to all headings, section titles, and product names, defaulting to <strong>Playfair Display</strong>. Choose any font from the Shopify-hosted font library.</li>
+          <li><strong>Body font</strong> &mdash; Font picker applied to paragraphs, descriptions, navigation links, and general UI text.</li>
+        </ul>
+
+        <h3>Layout</h3>
+
+        <p>Under <strong>Theme settings &gt; Layout</strong>, you can control the page width and the left rail:</p>
+
+        <ul>
+          <li><strong>Page width</strong> &mdash; Set the maximum content width to suit your storefront.</li>
+          <li><strong>Enable left rail</strong> &mdash; Checkbox that turns the pinned left icon rail on or off globally. This is <strong>OFF by default</strong> &mdash; Meowhaus is designed to look complete without it, so only enable it if you want the extra vertical navigation.</li>
+        </ul>
+
+        <h3>Cart</h3>
+
+        <p>Under <strong>Theme settings &gt; Cart</strong>:</p>
+
+        <ul>
+          <li><strong>Cart type</strong> &mdash; Choose <code>Drawer</code> for the AJAX slide-in cart or <code>Page</code> for a traditional full-page cart with a no-JS fallback.</li>
+          <li><strong>Free shipping threshold</strong> &mdash; Set the dollar amount required to unlock free shipping. Setting this to <code>0</code> hides the free shipping progress bar entirely.</li>
+        </ul>
+
+        <h3>Social</h3>
+
+        <p>Under <strong>Theme settings &gt; Social</strong>, add your <strong>Instagram</strong>, <strong>Twitter</strong>, and <strong>Facebook</strong> URLs. These populate the footer social icons throughout the storefront.</p>
+
+        <!-- Header & Navigation -->
+        <h2 id="header-navigation">Header &amp; Navigation</h2>
+
+        <h3>Menu, Logo &amp; Logo Position</h3>
+
+        <p>In the header section settings, use the <strong>menu picker</strong> to select which Shopify navigation menu displays in the header, and upload your <strong>logo image</strong>. A <strong>logo position</strong> setting lets you choose between <code>Left</code> and <code>Center</code> alignment to match your brand. Manage menus in <strong>Shopify Admin &gt; Online Store &gt; Navigation</strong>.</p>
+
+        <h3>Sticky Header</h3>
+
+        <p>Enable the <strong>sticky header</strong> checkbox in the header section settings to keep the header pinned as customers scroll.</p>
+
+        <h3>Mobile Menu</h3>
+
+        <p>Below <strong>990px</strong> viewport width, the header navigation collapses into a mobile menu icon. Above 990px, the full navigation menu displays inline in the header.</p>
+
+        <!-- Hero Banner -->
+        <h2 id="hero-banner">Hero Banner</h2>
+
+        <h3>Bundled Photos or Custom Image</h3>
+
+        <p>The homepage hero banner includes a <strong>"Bundled photo"</strong> select field &mdash; choose any of the <strong>5 bundled lifestyle photos</strong> that ship with the theme to launch instantly with zero photography of your own. To use your own photo instead, use the <strong>Image</strong> picker, which overrides the bundled photo selection whenever an image is uploaded.</p>
+
+        <h3>Eyebrow, Heading &amp; CTA</h3>
+
+        <p>The hero supports an <strong>eyebrow</strong> label above the headline, a <strong>two-line heading</strong>, and an optional <strong>call-to-action</strong> button with customizable text and link.</p>
+
+        <h3>Height &amp; Scrim</h3>
+
+        <ul>
+          <li><strong>Height</strong> &mdash; Slider from <strong>360px to 720px</strong> to control the hero's height on desktop.</li>
+          <li><strong>Light scrim opacity</strong> &mdash; Adjusts the light overlay applied over the hero photo so heading text stays legible without darkening the warm aesthetic.</li>
+          <li><strong>Text position</strong> &mdash; Choose where the eyebrow, heading, and CTA are anchored within the hero.</li>
+        </ul>
+
+        <!-- Explore Categories -->
+        <h2 id="explore-categories">Explore Categories</h2>
+
+        <h3>Circular Medallions</h3>
+
+        <p>The Explore Categories section displays up to <strong>8 collection blocks</strong> as circular medallions. For each block, choose a <strong>collection</strong> to link to and optionally override its <strong>image</strong> with a custom photo instead of the collection's default image.</p>
+
+        <div class="callout callout-tip">
+          <p><strong>Tip:</strong> Create automated collections for the most common cat furniture categories by tagging products <code>cat-tower</code>, <code>interactive-toy</code>, <code>scratcher</code>, and <code>bed</code>, then set up 4 automated collections in <strong>Shopify Admin &gt; Products &gt; Collections</strong> using those tags as conditions. Link each medallion block to the matching collection.</p>
+        </div>
+
+        <!-- Lookbook -->
+        <h2 id="lookbook">Lookbook</h2>
+
+        <h3>Shop-the-Look Grid</h3>
+
+        <p>The Lookbook section displays up to <strong>8 image blocks</strong> in a staggered grid. Each block accepts a <strong>lifestyle photo</strong> and an optional <strong>product link</strong>. When a product link is set, a tag badge appears on the photo so customers can shop the look directly from the image.</p>
+
+        <!-- Fan Favorites -->
+        <h2 id="fan-favorites">Fan Favorites</h2>
+
+        <p>Add the Fan Favorites section from the theme editor and configure:</p>
+
+        <ul>
+          <li><strong>Collection</strong> &mdash; Pick the collection to pull bestselling products from.</li>
+          <li><strong>Product count</strong> &mdash; Choose how many products to display.</li>
+          <li><strong>Use recommendations</strong> &mdash; Enable this to switch the section into Shopify's product recommendations mode instead of a fixed collection.</li>
+        </ul>
+
+        <!-- Star Ratings -->
+        <h2 id="star-ratings">Star Ratings</h2>
+
+        <p>Fan Favorites and product cards can optionally display a star rating next to the price. To enable star ratings for a product:</p>
+
+        <ol>
+          <li>Go to <strong>Shopify Admin &gt; Settings &gt; Custom data &gt; Products</strong> and add a new metafield definition with namespace and key <code>reviews.rating</code>.</li>
+          <li>Set the <strong>rating type</strong> so it accepts a decimal value.</li>
+          <li>On each product, enter a value such as <code>4.8</code> in the <code>reviews.rating</code> field.</li>
+        </ol>
+
+        <p>When a product has a value in <code>reviews.rating</code>, the star rating renders automatically next to the price. Products without a value simply hide the rating &mdash; no placeholder or broken layout appears.</p>
+
+        <!-- Product Page -->
+        <h2 id="product-page">Product Page</h2>
+
+        <h3>Reorderable Blocks</h3>
+
+        <p>The product page is built from reorderable blocks that you can drag into any order in the theme editor: vendor, title, price, star rating, variant pills, quantity, buy buttons, description, collapsible tabs, and share.</p>
+
+        <h3>Media Gallery</h3>
+
+        <p>The product media gallery supports standard images as well as <strong>video</strong> and <strong>3D models</strong>. Upload a 3D model file through the standard Shopify product media uploader and it will display automatically in the gallery &mdash; no extra configuration required.</p>
+
+        <h3>Variant Pills</h3>
+
+        <p>Variants use a rounded pill-style picker that matches the theme's overall design language. Selecting a pill for one option keeps every other option selector on the page in sync.</p>
+
+        <h3>Dynamic Checkout &amp; Structured Data</h3>
+
+        <p>Dynamic checkout buttons (Shop Pay and other express checkout options) appear automatically below the buy buttons. The product page also outputs JSON-LD structured data for SEO and rich search results, with no extra setup needed.</p>
+
+        <h3>Collapsible Tabs</h3>
+
+        <p>Use the collapsible tabs block to organize shipping info, materials, care instructions, or any custom content into clean, expandable sections.</p>
+
+        <!-- Collection Page -->
+        <h2 id="collection-page">Collection Page</h2>
+
+        <h3>Sorting &amp; Filters</h3>
+
+        <p>Collection pages include a sort dropdown and Shopify's native storefront filters. To enable filters:</p>
+
+        <ol>
+          <li>Go to <strong>Shopify Admin &gt; Search &amp; Discovery</strong>.</li>
+          <li>Open <strong>Filters</strong> and enable the filters you want to expose (product type, availability, tags, etc.).</li>
+          <li>Meowhaus automatically renders enabled filters on the collection page, styled to match the warm, organic aesthetic.</li>
+        </ol>
+
+        <h3>Price Range</h3>
+
+        <p>A price range filter is available alongside the standard storefront filters, letting customers narrow results to their budget.</p>
+
+        <!-- Cart -->
+        <h2 id="cart">Cart</h2>
+
+        <h3>Drawer or Page</h3>
+
+        <p>Choose between a slide-in <strong>drawer</strong> cart or a traditional full <strong>page</strong> cart under <strong>Theme settings &gt; Cart</strong>. The page cart includes a no-JS fallback so it functions even if JavaScript fails to load.</p>
+
+        <h3>Free Shipping Bar</h3>
+
+        <p>The cart drawer displays a free shipping progress bar based on the <strong>Free shipping threshold</strong> you set in Theme settings &gt; Cart. Setting the threshold to <code>0</code> hides the bar entirely if you don't offer free shipping.</p>
+
+        <h3>Order Notes</h3>
+
+        <p>Customers can add an order note directly from the cart &mdash; useful for gift messages or delivery instructions. Cart totals are section-rendered, so quantity changes update instantly without a full page reload.</p>
+
+        <!-- Customer Accounts & Gift Card -->
+        <h2 id="customer-accounts">Customer Accounts &amp; Gift Card</h2>
+
+        <p>Meowhaus includes fully styled customer account templates: <strong>login</strong>, <strong>register</strong>, <strong>account</strong>, <strong>order history</strong>, and <strong>addresses</strong>. A <strong>gift card</strong> template is also included and styled to match the theme. A <strong>newsletter signup</strong> block is available to add anywhere on the homepage or footer.</p>
+
+        <div class="callout">
+          <p><strong>Note:</strong> Meowhaus has no external JavaScript or CSS dependencies and requires no third-party apps for any of the features on this page. The theme is built to be responsive and accessible, with focus traps in the cart drawer and mobile menu, ARIA attributes throughout, and support for reduced-motion preferences.</p>
+        </div>
+
+        <!-- License & Activation -->
+        <h2 id="license-activation">License &amp; Activation</h2>
+
+        <h3>License Terms</h3>
+
+        <p>Each Meowhaus purchase grants you a single-store license. This means you may install and use the theme on:</p>
+
+        <ul>
+          <li>One (1) live production Shopify store</li>
+          <li>One (1) development or staging store for testing purposes</li>
+        </ul>
+
+        <p>Using the theme on additional production stores requires purchasing additional licenses. Contact our support team for multi-license pricing.</p>
+
+        <h3>Entering Your License Key</h3>
+
+        <p>After purchasing the theme, you will receive a license key via email. To activate:</p>
+
+        <ol>
+          <li>Install the theme on your Shopify store following the installation steps above.</li>
+          <li>Open the theme editor and navigate to <strong>Theme settings &gt; License</strong>.</li>
+          <li>Enter your license key in the <strong>License key</strong> field.</li>
+          <li>Click <strong>Save</strong>. The theme will verify your license against our server and activate all premium features.</li>
+        </ol>
+
+        <h3>Removing the Watermark</h3>
+
+        <p>The unlicensed version of Meowhaus displays a small "Theme by beBriz" watermark in the footer. Once you enter a valid license key, the footer watermark is automatically removed and all premium sections become fully functional.</p>
+
+        <h3>Need Help?</h3>
+
+        <p>If you cannot find the answer to your question in this documentation, visit our <a href="../../support/index.html">support page</a> to contact our team directly. We typically respond within 24 hours on business days.</p>
+
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../../index.html" class="logo"><span>be</span>Briz</a>
+          <p>Premium Shopify themes for modern e-commerce. Designed and developed with an obsession for quality, performance, and detail.</p>
+          <div class="footer-tagline">Powered by beBriz</div>
+        </div>
+        <div class="footer-col">
+          <h4>Themes</h4>
+          <a href="../../themes/meowhaus/index.html">Meowhaus</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="../../docs/index.html">Documentation</a>
+          <a href="../../support/index.html">Support</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="GitHub">GH</a>
+            <a href="#" aria-label="Dribbble">Dr</a>
+          </div>
+          <a href="../../support/index.html#contact" style="margin-top: 12px;">Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 beBriz. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
