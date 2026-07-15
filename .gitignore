@@ -24,6 +24,13 @@ themes/aurora/*
 !themes/aurora/index.html
 aurora-theme-*.zip
 
+# themes/patina has its own standalone git repo for version control.
+# The sales page (index.html) is hand-maintained here and tracked; everything
+# else in themes/patina/ (the theme source files) stays excluded.
+themes/patina/*
+!themes/patina/index.html
+patina-theme-*.zip
+
 # Local working files (not site content)
 Gemini_Generated_Image_*.png
 screenshot.png
@@ -33,3 +40,5 @@ meowhaus-demo-products.csv
 meowhaus-theme/
 aurora-demo-products.csv
 aurora-theme/
+patina-demo-products.csv
+patina-theme/
