@@ -59,9 +59,14 @@ comparison against live renders, iterating until each section passes.
   equivalent) + small "360°" doodle badge accent.
 - lookbook: B/W-leaning street photos in black hard frames + neon
   `#SHOP THE LOOK` sticker on product-linked tiles (replaces tag badge).
-- social-proof: black-framed photos, marker captions.
-- bestsellers ("High-Volume D2C Grid"): black-frame product cards, neon
-  sticker prices.
+- social-proof: WHITE polaroid frames + marker captions (amended 2026-07-20:
+  the mockup's social-proof row is white-bordered polaroids, not black frames
+  — mockup wins over the original spec draft; direct-purchase testimonials
+  match). Lookbook stays black `.frame-hard`.
+- bestsellers ("High-Volume D2C Grid"): gray fabric mats (accent-1 + tape
+  texture) with taped top edge and cream MARKER price chips (amended
+  2026-07-20: the mockup's D2C grid shows gray mats + handwritten price
+  scraps, not black frames/neon prices — mockup wins).
 - direct-purchase: neon ATC block, label-cream card on concrete.
 - trust-badges: stamped icon row (bottom of mockup).
 - Branding: Patina strings → Riot; demo shop voice "ARCHIVE UNKNOWN".
