@@ -31,6 +31,14 @@ themes/patina/*
 !themes/patina/index.html
 patina-theme-*.zip
 
+# themes/riot has its own standalone git repo for version control.
+# The sales page (index.html) is hand-maintained here and tracked; everything
+# else in themes/riot/ (the theme source files) stays excluded.
+themes/riot/*
+!themes/riot/index.html
+riot-theme-*.zip
+riot-canva-*.zip
+
 # Local working files (not site content)
 Gemini_Generated_Image_*.png
 screenshot.png
@@ -42,3 +50,5 @@ aurora-demo-products.csv
 aurora-theme/
 patina-demo-products.csv
 patina-theme/
+riot-demo-products.csv
+riot-theme/
